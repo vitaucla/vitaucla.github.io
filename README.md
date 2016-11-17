@@ -1,1 +1,1 @@
-Welcome to the VITA UCLA official website created by Simon Zhou. 
+Welcome to the VITA UCLA official website created by Simon Zhou as part of the Community Service Commission. 
