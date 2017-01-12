@@ -3179,6 +3179,14 @@ body.is-touch .poptrox-popup .closer {
     }
 }
 
+#application {
+    color: #98c593;
+}
+
+#application-size {
+    font-size: 80%;
+}
+
 #event {
     font-size: 90%;
 }
