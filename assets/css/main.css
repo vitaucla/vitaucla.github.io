@@ -2748,8 +2748,12 @@ body {
     outline: 0;
 }
 
+img {
+    max-width: 100%;
+}
 
-/* Intro */
+
+/* Home */
 
 #home {
     background: url("images/overlay.png"), url("../../images/intro.jpg");
