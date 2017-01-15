@@ -2751,7 +2751,7 @@ body {
 
 /* Intro */
 
-#intro {
+#home {
     background: url("images/overlay.png"), url("../../images/intro.jpg");
     background-size: 256px 256px, cover;
     background-attachment: fixed, fixed;
@@ -2777,6 +2777,10 @@ body {
     background-size: 256px 256px, cover;
     background-attachment: fixed, fixed;
     background-position: top left, center center;
+}
+
+#events {
+    background: #D3D3D3;
 }
 
 
@@ -3185,6 +3189,7 @@ body.is-touch .poptrox-popup .closer {
 
 #application-size {
     font-size: 80%;
+    padding-bottom: 0px;
 }
 
 #event {
@@ -3216,7 +3221,7 @@ body.is-touch .poptrox-popup .closer {
         padding: 1em;
     }
     .box.style2 {
-        padding: 1.5em 1.25em 1.5em 1.25em;
+        padding: 1.25em 1.25em 1.25em 1.25em;
         background-color: rgba(255, 255, 255, 0.9);
     }
     /* Main */
