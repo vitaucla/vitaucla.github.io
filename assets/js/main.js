@@ -7,12 +7,12 @@
 (function($) {
 
 	skel.breakpoints({
-		wide: '(max-width: 1920px)',
-		normal: '(max-width: 1680px)',
-		narrow: '(max-width: 1280px)',
-		narrower: '(max-width: 1000px)',
-		mobile: '(max-width: 736px)',
-		mobilenarrow: '(max-width: 480px)',
+		xxlarge: '(max-width: 1920px)',
+		xlarge: '(max-width: 1680px)',
+		large: '(max-width: 1280px)',
+		medium: '(max-width: 1000px)',
+		small: '(max-width: 736px)',
+		xsmall: '(max-width: 480px)',
 	});
 
 	$(function() {
@@ -34,7 +34,7 @@
 		// Touch mode.
 			skel.on('change', function() {
 
-				if (skel.vars.mobile || skel.breakpoint('mobile').active)
+				if (skel.vars.mobile || skel.breakpoint('small').active)
 					$body.addClass('is-touch');
 				else
 					$body.removeClass('is-touch');
@@ -44,21 +44,54 @@
 		// Fix: Placeholder polyfill.
 			$('form').placeholder();
 
-		// Prioritize "important" elements on mobile.
-			skel.on('+mobile -mobile', function() {
+		// Fix: IE flexbox fix.
+			if (skel.vars.IEVersion <= 11
+			&&	skel.vars.IEVersion >= 10) {
+
+				var $main = $('.main.fullscreen'),
+					IEResizeTimeout;
+
+				$window
+					.on('resize.ie-flexbox-fix', function() {
+
+						clearTimeout(IEResizeTimeout);
+
+						IEResizeTimeout = setTimeout(function() {
+
+							var wh = $window.height();
+
+							$main.each(function() {
+
+								var $this = $(this);
+
+								$this.css('height', '');
+
+								if ($this.height() <= wh)
+									$this.css('height', (wh - 50) + 'px');
+
+							});
+
+						});
+
+					})
+					.triggerHandler('resize.ie-flexbox-fix');
+
+			}
+
+		// Prioritize "important" elements on small.
+			skel.on('+small -small', function() {
 				$.prioritize(
-					'.important\\28 mobile\\29',
-					skel.breakpoint('mobile').active
+					'.important\\28 small\\29',
+					skel.breakpoint('small').active
 				);
 			});
 
-		// CSS polyfills (IE<9).
-			if (skel.vars.IEVersion < 9)
-				$(':last-child').addClass('last-child');
-
 		// Gallery.
 			$window.on('load', function() {
-				$('.gallery').poptrox({
+
+				var $gallery = $('.gallery');
+
+				$gallery.poptrox({
 					baseZIndex: 10001,
 					useBodyOverflow: false,
 					usePopupEasyClose: false,
@@ -67,16 +100,41 @@
 					usePopupDefaultStyling: false,
 					usePopupCaption: true,
 					popupLoaderText: '',
-					windowMargin: (skel.breakpoint('mobile').active ? 5 : 50),
+					windowMargin: 50,
 					usePopupNav: true
 				});
+
+				// Hack: Adjust margins when 'small' activates.
+					skel
+						.on('-small', function() {
+							$gallery.each(function() {
+								$(this)[0]._poptrox.windowMargin = 50;
+							});
+						})
+						.on('+small', function() {
+							$gallery.each(function() {
+								$(this)[0]._poptrox.windowMargin = 5;
+							});
+						});
+
 			});
 
 		// Section transitions.
-			if (!skel.vars.mobile
-			&&	skel.canUse('transition')) {
+			if (skel.canUse('transition')) {
 
 				var on = function() {
+
+					// Galleries.
+						$('.gallery')
+							.scrollex({
+								top:		'30vh',
+								bottom:		'30vh',
+								delay:		50,
+								initialize:	function() { $(this).addClass('inactive'); },
+								terminate:	function() { $(this).removeClass('inactive'); },
+								enter:		function() { $(this).removeClass('inactive'); },
+								leave:		function() { $(this).addClass('inactive'); }
+							});
 
 					// Generic sections.
 						$('.main.style1')
@@ -97,60 +155,6 @@
 								terminate:	function() { $(this).removeClass('inactive'); },
 								enter:		function() { $(this).removeClass('inactive'); },
 								leave:		function() { $(this).addClass('inactive'); }
-							});
-
-					// Work.
-						$('#work')
-							.scrollex({
-								top:		'40vh',
-								bottom:		'30vh',
-								delay:		50,
-								initialize:	function() {
-
-												var t = $(this);
-
-												t.find('.row.images')
-													.addClass('inactive');
-
-											},
-								terminate:	function() {
-
-												var t = $(this);
-
-												t.find('.row.images')
-													.removeClass('inactive');
-
-											},
-								enter:		function() {
-
-												var t = $(this),
-													rows = t.find('.row.images'),
-													length = rows.length,
-													n = 0;
-
-												rows.each(function() {
-													var row = $(this);
-													window.setTimeout(function() {
-														row.removeClass('inactive');
-													}, 100 * (length - n++));
-												});
-
-											},
-								leave:		function(t) {
-
-												var t = $(this),
-													rows = t.find('.row.images'),
-													length = rows.length,
-													n = 0;
-
-												rows.each(function() {
-													var row = $(this);
-													window.setTimeout(function() {
-														row.addClass('inactive');
-													}, 100 * (length - n++));
-												});
-
-											}
 							});
 
 					// Contact.
@@ -168,15 +172,15 @@
 
 				var off = function() {
 
+					// Galleries.
+						$('.gallery')
+							.unscrollex();
+
 					// Generic sections.
 						$('.main.style1')
 							.unscrollex();
 
 						$('.main.style2')
-							.unscrollex();
-
-					// Work.
-						$('#work')
 							.unscrollex();
 
 					// Contact.
@@ -187,7 +191,7 @@
 
 				skel.on('change', function() {
 
-					if (skel.breakpoint('mobile').active)
+					if (skel.breakpoint('small').active)
 						(off)();
 					else
 						(on)();
@@ -210,7 +214,7 @@
 					resizeTimeout = window.setTimeout(function() {
 
 						// Update scrolly links.
-							$('a[href^=#]').scrolly({
+							$('a[href^="#"]').scrolly({
 								speed: 1500,
 								offset: $header.outerHeight() - 1
 							});

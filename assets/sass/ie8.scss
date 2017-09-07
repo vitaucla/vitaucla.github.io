@@ -8,15 +8,6 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-/* Section/Article */
-
-	section > .last-child,
-	article > .last-child,
-	section.last-child,
-	article.last-child {
-		margin-bottom: 0;
-	}
-
 /* Form */
 
 	form {
@@ -27,7 +18,7 @@
 		textarea {
 			position: relative;
 			-ms-behavior: url('assets/js/ie/PIE.htc');
-			border: solid 1px #ccc;
+			border: solid 1px;
 		}
 	}
 
@@ -44,6 +35,12 @@
 		&.down {
 			text-indent: 0;
 		}
+	}
+
+/* Footer */
+
+	#footer {
+		color: #fff;
 	}
 
 /* Intro */

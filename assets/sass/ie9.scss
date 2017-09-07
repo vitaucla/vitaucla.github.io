@@ -17,8 +17,38 @@
 		}
 	}
 
+/* Gallery */
+
+	.gallery {
+		&:after {
+			content: '';
+			display: block;
+			clear: both;
+		}
+
+		article {
+			float: left;
+		}
+	}
+
+/* Main */
+
+	.main {
+		&.fullscreen {
+			min-height: 0;
+		}
+
+		&.style1 {
+			> .content {
+				margin: 0 auto;
+			}
+		}
+	}
+
 /* Poptrox */
 
-	.poptrox-popup .loader {
-		display: none !important;
+	.poptrox-popup {
+		.loader {
+			display: none !important;
+		}
 	}

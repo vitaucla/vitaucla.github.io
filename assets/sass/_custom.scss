@@ -1,0 +1,20 @@
+// For scss not originally included in the template.
+// Use !important to override original settings (bad form, but makes maintenance easier)
+
+#header {
+    h1 {
+        left: 5.5em !important; // Original 1em
+    }
+    nav {
+        right: 5em !important; // Original 0.5em
+    }
+}
+
+#footer {
+    ul.actions {
+        left: 5.5em !important; // Original 1em
+    }
+    ul.menu {
+        right: 5em !important; // Original 2em
+    }
+}
