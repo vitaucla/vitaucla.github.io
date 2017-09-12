@@ -8,7 +8,7 @@ Original stylesheet credits:
 >html5up.net | @ajlkn
 >Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 
-To make modifications to the stylesheet, edit the _custom.scss file in assets/sass/. This file is injected at the end of main.scss and can be used to override any of the original styling in the template. Be very careful with this!
+To make modifications to the stylesheet, edit the _custom.scss file in assets/sass/. This file is injected at the end of main.scss and can be used to override any of the original styling in the template.
 
 To save modifications, install SASS and use
 ```
