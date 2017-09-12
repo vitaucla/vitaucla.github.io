@@ -2,10 +2,18 @@
 // Import this at the bottom of main.scss to ensure attributes can override defaults and all mixins are defined.
 // Use !important to override original attributes (bad form, but makes maintenance easier).
 
+/* Resize and align logo. */
+#logo {
+    width: 20%;
+    vertical-align: middle;
+}
+
+/* Add minimum size for desktop view breakpoint */
 @include skel-breakpoints((
     desktop: '(min-width: 1000px)'
 ));
 
+/* Move header and footer buttons closer to center. */
 @include breakpoint(desktop) {
     #header {
         h1 {
@@ -24,4 +32,13 @@
             right: 5em !important; // Original 2em
         }
     }
+}
+
+/* Original padding is way too much. */
+.main.style3 {
+    padding: 2em 0 2em 0; // Original 6em 0 6em 0
+}
+
+#contact {
+    padding-bottom: 2em; // Original 0em
 }
