@@ -1,0 +1,4 @@
+/*
+    For scripts not originally included in the template.
+    Import this at the bottom of index.html.
+*/

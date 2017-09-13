@@ -1,6 +1,8 @@
-// For scss not originally included in the template.
-// Import this at the bottom of main.scss to ensure attributes can override defaults and all mixins are defined.
-// Use !important to override original attributes (bad form, but makes maintenance easier).
+/*
+    For scss not originally included in the template.
+    Import this at the bottom of main.scss to ensure attributes can override defaults and all mixins are defined.
+    Use !important to force override if necessary (bad form, but makes maintenance easier).
+*/
 
 /* Resize and align logo. */
 #logo {
