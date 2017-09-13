@@ -44,3 +44,37 @@
 #contact {
     padding-bottom: 2em; // Original 0em
 }
+
+/* UCLA color scheme */
+a {
+    color: #3284bf; // Original #98c593
+}
+
+input[type="submit"] {
+    background-color: #3284bf; // Original #98c593
+}
+
+/* Table of contents */
+.toc_container {
+    background: #f9f9f9 none repeat scroll 0 0;
+    border: 1px solid #aaa;
+    display: table;
+    font-size: 95%;
+    margin-bottom: 1em;
+    padding: 20px;
+    width: 100%;
+    li {
+        list-style: outside none none !important;
+    }
+    ul {
+        list-style: outside none none !important;
+        margin-bottom: 0;
+        ul {
+            li {
+                a {
+                    color: #00a5e5; // Secondary color for subpoints
+                }
+            }
+        }
+    }
+}

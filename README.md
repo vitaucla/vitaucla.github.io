@@ -33,6 +33,8 @@ scss -t compressed main.scss main.min.css
 ```
 to minify and save to standard CSS. Then move main.min.css to assets/css/. The main.min.css.map file can be deleted.
 
+To style the password splash page just modify the CSS in volunteers.html directly; there are not many elements involved so it shouldn't be too difficult to keep track of everything. The content after the splash screen should be styled by the main stylesheet however.
+
 # Scripting
 Scripts used for main theme:
 > jQuery v1.11.3 | (c) 2005, 2015 jQuery Foundation, Inc. | jquery.org/license  
