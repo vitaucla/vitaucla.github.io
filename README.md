@@ -9,14 +9,14 @@ To change the content on the main page, just modify index.html and push the chan
 The volunteer page is (weakly) password-protected. Since we can't modify any of the backend on GitHub Pages, we have to use a weaker solution.  
 
 1. Create a static HTML file with the content you want to display to volunteers and keep it outside the public repository.
-2. Use <a href="https://robinmoisson.github.io/staticrypt/">StatiCrypt</a> and follow the directions to create an encrypted HTML file. Necessary styles and scripts are all self-contained.
-3. Modify the generated HTML to your desire (color scheme, footer, favicon, etc.) and create references normally.
+2. Use <a href="https://robinmoisson.github.io/staticrypt/">StatiCrypt</a> and follow the directions to create an encrypted HTML file. For a full page including password splash screen, click "Download html file with password prompt". Necessary styles and scripts are all self-contained.
+3. Encrypted contents are on line 172 of the generated HTML in the variable "encryptedMsg". If you don't want to keep redoing custom styling every time you regenerate the page, just copy that content only.
 
 Some notes:
 
-1. Any changes you make to the content on volunteers.html has to be re-encrypted using StatiCrypt to be reflected on the site. 
+1. Any changes you make to the content on volunteers.html has to be re-encrypted using StatiCrypt to update the page.
 2. This tool only supports static HTML pages to be encrypted.
-3. The password is succeptible to bruteforcing. Do not put any really sensitive information on this page.
+3. The password is succeptible to bruteforcing. Do not put any really sensitive information on this page.  
 
 # Styling
 Original stylesheet credits:
