@@ -78,3 +78,27 @@ input[type="submit"] {
         }
     }
 }
+
+/* Alert message box */
+/* Reference: https://www.w3schools.com/howto/howto_js_alert.asp */
+.alert {
+    padding: 20px;
+    color: #31708f;
+    background-color: #d9edf7;
+    border-color: #bce8f1
+}
+
+/* Close button on alert message box */
+.closebtn {
+    color: #31708f;
+    font-weight: bold;
+    float: right;
+    font-size: 2em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+    color: #1436DD;
+}
