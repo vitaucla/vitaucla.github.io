@@ -20,6 +20,9 @@
     <link rel="shortcut icon" href="images/favicon/favicon.ico">
     <meta name="msapplication-config" content="images/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
+
+    <!-- For FAQ -->
+    <script src="assets/js/modernizr.js"></script>
 </head>
 
 <body>
@@ -27,8 +30,9 @@
     <!-- Alert box -->
     <!-- Reference: https://www.w3schools.com/howto/howto_js_alert.asp -->
     <div class="alert">
-        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
-        <strong>Notice:</strong> we have relocated to www.vitaucla.org. After October 15, 2017, links to www.vitaucla.com will not work. Please be sure to update all references and notes!
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        <strong>Notice:</strong> we have relocated to www.vitaucla.org. After October 15, 2017, links to www.vitaucla.com
+        will not work. Please be sure to update all references and notes!
     </div>
 
     <!-- Header -->
@@ -65,15 +69,15 @@
     <!-- One -->
     <section id="one" class="main style2 right dark fullscreen">
         <div class="content box style2">
-            <h2>Who Are We?</h2>
+            <h2>About</h2>
             <p>
-                VITA at UCLA has been providing free income tax preparation and assistance to low-income and elderly individuals in the Los
-                Angeles community since 1987. Our mission is to not only help people file their taxes, but also to educate
-                them and demystify tax planning. We hope to clarify the tax planning and filing process as well as provide
-                assistance to those who would otherwise go without aid. Each year, we rigorously train approximately 200
-                UCLA undergraduate students in personal income tax preparation, culminating in a final exam administered
-                by the IRS and certification in tax preparation. In 2016, our volunteers assisted approximately 1,225 clients
-                and saved them nearly $300,000 through tax refunds and credits.
+                Welcome to VITA at UCLA! <br /><br /> Founded in 1987, VITA at UCLA provides free federal and state income
+                tax preparation assistance to low- to moderate-income, disabled, and elderly individuals in the Los Angeles
+                community. It is our goal to help and educate people in filing tax returns to help clarify the process and
+                provide assistance to those who otherwise would go without aid. Each year, we train approximately 200 UCLA
+                undergraduate students in individual income tax preparation. In 2017, our volunteers served hundreds of clients,
+                saving them over $450,000 through tax refunds and credits.
+
             </p>
         </div>
         <a href="#two" class="button style2 down anchored"></a>
@@ -83,15 +87,14 @@
     <section id="two" class="main style2 left dark fullscreen">
         <div class="content box style2">
             <h2>Volunteer</h2>
-            <p>Students at UCLA may join VITA during Fall or Winter quarters. Volunteers will be equipped to file tax returns
-                through extensive, interactive training sessions. At these training sessions volunteers will learn about
-                general tax concepts and specialized income tax situations for low-income, international, and elderly clients.
-                Additionally, training sessions will include tax client simulations in order to train volunteers for client
-                interactions. For Fall volunteers, training will take place over a 6 week period from Weeks 3 to 8, with
-                an additional 2 weeks of training during Winter quarter in Weeks 1 and 2. For Winter volunteers, trainings
-                are condensed into a 4 week course from Weeks 2 to 6 so that volunteers may serve as many clients as possible
-                during tax season. During Winter and Spring quarters, volunteers will serve clients up until April. Does
-                all that sound good to you? Join today! No prior experience is required! VITA is open to all majors!
+            <p>
+                Students at UCLA may join VITA during Fall or Winter quarters. Volunteers will be equipped to file tax returns through extensive,
+                interactive training sessions. Volunteers will learn about general tax concepts and tax situations for low-income,
+                international, and elderly clients. Additionally, training sessions will include tax client simulations in
+                order to train volunteers for client interactions. For Fall volunteers, training will take place over a 6
+                week period from Weeks 3 to 8, with an additional 2 weeks of training during Winter quarter in Weeks 1 and
+                2. For Winter volunteers, trainings are condensed into a 4 week course from Weeks 2 to 6. Tax sites will
+                last from the end of January to mid-April. Join today!
             </p>
             <p><strong><a href="https://docs.google.com/forms/d/e/1FAIpQLSePQ45shkhMoLajEnPAQwxPJqqjGz8neS1WPjLeCjyrc8X1IA/viewform">
                 Access the 2017 - 2018 Fall application!</a></strong></p>
@@ -112,168 +115,253 @@
     </section>
 
     <section id="volunteerFaq" class="main style3 primary">
-        <div class="content container">
+        <div class="content container faq-container">
             <h2>Volunteer FAQs</h2>
-            <div class="toc_container">
-                <ul class="toc_list">
-                    <li><a href="#vfaq1">1. How can I apply?</a></li>
-                    <li><a href="#vfaq2">2. Do I have to be a particular major to apply?</a></li>
-                    <li><a href="#vfaq3">3. What if I have no experience working with taxes?</a></li>
-                    <li><a href="#vfaq4">4. What is the time commitment?</a></li>
-                    <li><a href="#vfaq5">5. When are the training dates?</a></li>
-                    <li><a href="#vfaq6">6. How many volunteers do you accept?</a></li>
-                    <li><a href="#vfaq7">7. How can I become a QR if I am a returning volunteer?</a></li>
+            <section class="cd-faq v_faq">
+                <ul class="cd-faq-categories v_faq">
+                    <li><a href="#v_applying">Applying</a></li>
+                    <li><a href="#v_training">Training</a></li>
+                    <li><a href="#v_other">Other</a></li>
                 </ul>
-            </div>
-            <p id="vfaq1"><strong>1. How can I apply?</strong></p>
-            <p>Please visit the <a href="#two">volunteer section</a>. and click on the application link!</p>
 
-            <p id="vfaq2"><strong>2. Do I have to be a particular major to apply?</strong></p>
-            <p>No, we accept all majors and minors, ranging from Business-Economics to Music Performance.</p>
+                <div class="cd-faq-items v_faq">
+                    <ul id="v_applying" class="cd-faq-group v_faq">
+                        <li class="cd-faq-title v_faq">
+                            <h2>Applying</h2>
+                        </li>
+                        <li>
+                            <a class="cd-faq-trigger v_faq" href="#0">How can I apply?</a>
+                            <div class="cd-faq-content">
+                                Details about the application can be found <a href="#two">here</a>.
+                            </div>
+                        </li>
 
-            <p id="vfaq3"><strong>3. What if I have no experience working with taxes?</strong></p>
-            <p>No worries! We provide you all the necessary training during Fall or Winter quarter.</p>
+                        <li>
+                            <a class="cd-faq-trigger v_faq" href="#0">How many volunteers do you accept?</a>
+                            <div class="cd-faq-content">
+                                We do not have a maximum cap for volunteers. If you are passionate about service and interested in learning more about taxes,
+                                we want you!
+                            </div>
+                        </li>
 
-            <p id="vfaq4"><strong>4. What is the time commitment?</strong></p>
-            <p>For Fall volunteers, the requirement is 16 hours for Winter and Spring quarter, totaling 32 hours. For Winter
-                volunteers, the requirement is 8 hours during the Winter and 16 hours during the Spring.</p>
+                        <li>
+                            <a class="cd-faq-trigger v_faq" href="#0">Do I have to be a particular major to apply?</a>
+                            <div class="cd-faq-content">
+                                No, we accept all majors and minors, ranging from Business-Economics to Music Performance.
+                            </div>
+                        </li>
+                        <li>
+                            <a class="cd-faq-trigger v_faq" href="#0">What if I have no experience working with taxes?</a>
+                            <div class="cd-faq-content">
+                                No worries! We provide you all the necessary training during Fall or Winter quarter.
+                            </div>
+                        </li>
+                    </ul>
 
-            <p id="vfaq5"><strong>5. When are the training dates?</strong></p>
-            <p>We have training every Tuesday and Sunday night from 6 - 8 PM at Kinsey Pavillion.</p>
+                    <ul id="v_training" class="cd-faq-group v_faq">
+                        <li class="cd-faq-title v_faq">
+                            <h2>Training</h2>
+                        </li>
+                        <li>
+                            <a class="cd-faq-trigger v_faq" href="#0">When are the training dates?</a>
+                            <div class="cd-faq-content">
+                                We have training every Tuesday and Sunday night from 6 - 8 PM at Kinsey Pavillion.
+                            </div>
+                        </li>
+                        <li>
+                            <a class="cd-faq-trigger v_faq" href="#0">What is the time commitment?</a>
+                            <div class="cd-faq-content">
+                                For Fall volunteers, the requirement is 16 hours for Winter and Spring quarter, totaling 32 hours. For Winter volunteers,
+                                the requirement is 8 hours during the Winter and 16 hours during the Spring.
+                            </div>
+                        </li>
+                    </ul>
 
-            <p id="vfaq6"><strong>6. How many volunteers do you accept?</strong></p>
-            <p>We do not have a maximum cap for volunteers. If you are passionate about service and interested in learning more
-                about taxes, we want you!</p>
-
-            <p id="vfaq7"><strong>7. How can I become a QR if I am a returning volunteer?</strong></p>
-            <p>More details will be sent out soon. Look out for our emails!</p>
+                    <ul id="v_other" class="cd-faq-group v_faq">
+                        <li class="cd-faq-title v_faq">
+                            <h2>Other</h2>
+                        </li>
+                        <li>
+                            <a class="cd-faq-trigger v_faq" href="#0">How can I become a QR if I am a returning volunteer?</a>
+                            <div class="cd-faq-content">
+                                More details will be sent out soon. Look out for our emails!
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <a href="#0" class="cd-close-panel v_faq">&#10006;</a>
+            </section>
         </div>
     </section>
 
     <section id="clientFaq" class="main style3 primary">
-        <div class="content container">
+        <div class="content container faq-container">
             <h2>Client FAQs</h2>
-            <div class="toc_container">
-                <ul class="toc_list">
-                    <li><a href="#cfaq1">1. Who can file their taxes with VITA?</a></li>
-                    <li><a href="#cfaq2">2. What should I bring to the tax site?</a></li>
-                    <ul>
-                        <li><a href="#cfaq2_1">2.1. Required for all:</a></li>
-                        <li><a href="#cfaq2_2">2.2. If applicable to your situation:</a></li>
-                        <li><a href="#cfaq2_3">2.3. Recommended:</a></li>
-                        <li><a href="#cfaq2_4">2.4. Notes for certain situations:</a></li>
-                    </ul>
-                    <li><a href="#cfaq3">3. Do I need to make an appointment?</a></li>
-                    <li><a href="#cfaq4">4. How are VITA members qualified to file on my behalf?</a></li>
-                    <li><a href="#cfaq5">5. How do I sign up for appointments?</a></li>
-                    <li><a href="#cfaq6">6. There are no appointments available! What do I do?</a></li>
-                    <li><a href="#cfaq7">7. What is the average wait time for walk-ins?</a></li>
-                    <li><a href="#cfaq8">8. At what time do you stop accepting walk-ins?</a></li>
-                    <li><a href="#cfaq9">9. How long will it take to complete my tax return?</a></li>
-                    <li><a href="#cfaq10">10. If I don’t have enough money in my account to pay my tax due, what do I do?</a></li>
-                    <li><a href="#cfaq11">11. When will I get my refund?</a></li>
-                    <li><a href="#cfaq12">12. Where can I park?</a></li>
-                    <li><a href="#cfaq13">13. Where are tax sites?</a></li>
-                    <li><a href="#cfaq14">14. When are tax sites?</a></li>
+            <section class="cd-faq c_faq">
+                <ul class="cd-faq-categories c_faq">
+                    <li><a href="#c_preparation">Preparation</a></li>
+                    <li><a href="#c_appointments">Appointments and Walk-ins</a></li>
+                    <li><a href="#c_sites">Tax Sites</a></li>
+                    <li><a href="#c_filing">Filing Your Return</a></li>
                 </ul>
-            </div>
-            <p id="cfaq1"><strong>1. Who can file their taxes with VITA?</strong></p>
-            <p>We primarily serve low-income and elderly individuals residing in the state of California. Please note that
-                <em>at this time this site is not equipped to file married-filing-separate (MFS) returns, itemized returns, or
-                    out of state returns.</em></p>
-            <p id="cfaq2"><strong>2. What should I bring to the tax site?</strong></p>
-            <ul>
-                <li id="cfaq2_1"><strong>2.1. Required for all:</strong></li>
-                <li>(1) Photo ID: Driver’s license, passport, student ID, etc.</li>
-                <li>(2a) Social Security cards for you, your spouse and any dependents you are claiming on your return. <em>Please
-                        bring the original document. For legal reasons we are unable to accept photos or copies!</em></li>
-                <li>(2b) If you, your spouse, or your dependents do not have an SSN, an Individual Taxpayer Identification Number
-                    (ITIN) assignment letter may be substituted for it.</li>
-                <li>(3) Bank account routing and account numbers if you would like to receive a direct deposit (a blank check
-                    is acceptable).</li>
-                <p></p>
-                <li id="cfaq2_2"><strong>2.2. If applicable to your situation:</strong></li>
-                <li>(4) Wage and earning statements (Form W-2, W-2G, 1099-R, 1099-Misc) from all employers.</li>
-                <li>(5) Interest and dividend statements from banks or brokerages (Form 1099-INT).</li>
-                <li>(6a) Forms 1095 (ACA) or Health Insurance Statements.</li>
-                <li>(6b) Health Insurance Exemption Certificate, if received.</li>
-                <li>(7) Form 1098-T for educational expenses (MyUCLA -> Finances and Jobs -> 1098T).</li>
-                <li>(8) Invoices indicating total amount paid for daycare provider and the daycare provider’s EIN or SSN.</li>
-                <p></p>
-                <li id="cfaq2_3"><strong>2.3. Recommended:</strong></li>
-                <li>(9) Copies of income transcripts from IRS and state.</li>
-                <li>(10) A copy of last year’s federal and state returns.</li>
-                <p></p>
-                <li id="cfaq2_4"><strong>2.4. Notes for certain situations:</strong></li>
-                <li>(1) To file taxes electronically on a married-filing-jointly (MFJ) tax return, <em>both spouses</em> must
-                    be present to sign the required forms.
-                </li>
-                <li>(2a) If you are a foreign non-resident, we are unable to file tax returns unless you have access to GLACIER
-                    tax preperation services (through UCLA or other employer).</li>
-                <li>(2b) If you are a foreign non-resident with access to GLACIER, please fill out your GLACIER forms prior to
-                    tax site. If you do not have your GLACIER forms fully filled out, we are unable to file for you.</li>
-            </ul>
 
-            <p id="cfaq3"><strong>3. Do I need to make an appointment?</strong></p>
-            <p>We accept walk-ins, but due to limited time and availability on each day, we cannot guarantee walk-ins will be
-                served. If it is possible, please make an appointment to ensure service will be provided.</p>
+                <div class="cd-faq-items c_faq">
+                    <ul id="c_preparation" class="cd-faq-group c_faq">
+                        <li class="cd-faq-title c_faq">
+                            <h2>Preparation</h2>
+                        </li>
+                        <li>
+                            <a class="cd-faq-trigger c_faq" href="#0">Who can file their taxes with VITA?</a>
+                            <div class="cd-faq-content">
+                                We primarily serve low-income and elderly individuals residing in the state of California. Please note that
+                                <em>at this time this site is not equipped to file married-filing-separate (MFS) returns, itemized returns, or
+                                out of state returns.</em>
+                            </div>
+                        </li>
 
-            <p id="cfaq4"><strong>4. How are VITA members qualified to file on my behalf?</strong></p>
-            <p>All of our volunteers have undergone extensive tax filing training and are certified by the IRS to file tax returns.
-                Additionally, each return is quality reviewed twice before being sent to the IRS, so at least three volunteers
-                individually check your return before filing to ensure no mistakes are made.</p>
+                        <li>
+                            <a class="cd-faq-trigger c_faq" href="#0">What should I bring to the tax site?</a>
+                            <div class="cd-faq-content">
+                                <strong>Required for all:</strong> <br /> (1) Photo ID: Driver’s license, passport, student
+                                ID, etc. <br /> (2a) Social Security cards for you, your spouse and any dependents you are
+                                claiming on your return. <br />
+                                <em>Please bring the original document. For legal reasons we are unable to accept photos or copies!</em>                                <br /> (2b) An Individual Taxpayer Identification Number (ITIN) assignment letter may be
+                                substituted for you, your spouse, and your dependents if you do not have a Social Security
+                                number. <br /> (3) Bank account routing and account numbers if you would like to receive
+                                a direct deposit (a blank check is acceptable). <br />
+                                <strong>If applicable to your situation:</strong> <br />(4) Wage and earning statements (Form
+                                W-2, W-2G, 1099-R, 1099-Misc) from all employers. <br />(5) Interest and dividend statements
+                                from banks or brokerages (Forms 1099). <br />(6a) All Forms 1095, Health Insurance Statements.
+                                <br />(6b) Health Insurance Exemption Certificate, if received. <br />(7) Form 1098-T for
+                                educational expenses (MyUCLA -> Finances and Jobs -> 1098T). <br />(8) Invoices indicating
+                                total amount paid for daycare provider and the daycare provider’s EIN or SSN.<br />
+                                <strong>Recommended:</strong> <br />(9) Copies of income transcripts from IRS and state.<br />
+                                (10) A copy of last year’s federal and state returns.<br />
+                                <strong>Notes for certain situations:</strong> <br />(1) To file taxes electronically on
+                                a married-filing-jointly (MFJ) tax return, <em>both spouses</em> must be present to sign
+                                the required forms. <br />(2a) If you are a foreign non-resident, we are unable to file tax
+                                returns unless you have access to GLACIER tax preperation services (through UCLA or other
+                                employer). <br />(2b) If you are a foreign non-resident with access to GLACIER, please fill
+                                out your GLACIER forms prior to tax site. If you do not have your GLACIER forms fully filled
+                                out, we are unable to file for you.
+                            </div>
+                        </li>
+                    </ul>
 
-            <p id="cfaq5"><strong>5. How do I sign up for appointments?</strong></p>
-            <p>Please visit our <a href="#events">events calendar</a> and click on a day to make an appointment.</p>
+                    <ul id="c_appointments" class="cd-faq-group c_faq">
+                        <li class="cd-faq-title c_faq">
+                            <h2>Appointments and Walk-ins</h2>
+                        </li>
+                        <li>
+                            <a class="cd-faq-trigger c_faq" href="#0">Do I need to make an appointment?</a>
+                            <div class="cd-faq-content">
+                                We accept walk-ins, but due to limited time and availability on each day, we cannot guarantee walk-ins will be served. If
+                                it is possible, please make an appointment to ensure service will be provided.
+                            </div>
+                        </li>
+                        <li>
+                            <a class="cd-faq-trigger c_faq" href="#0">How do I sign up for appointments?</a>
+                            <div class="cd-faq-content">
+                                Please visit our <a href="#events">events calendar</a> and click on a day to make an appointment.
+                            </div>
+                        </li>
+                        <li>
+                            <a class="cd-faq-trigger c_faq" href="#0">There are no appointments available! What do I do?</a>
+                            <div class="cd-faq-content">
+                                Due to our high demand as we get closer to the filing deadline, appointments are limited and go quickly. You are welcome
+                                to walk-in; we recommend you come as early as possible since appointments have priority.
+                            </div>
+                        </li>
+                        <li>
+                            <a class="cd-faq-trigger c_faq" href="#0">What is the average wait time for walk-ins?</a>
+                            <div class="cd-faq-content">
+                                Depending on how busy our tax sites are, the wait time may range from 15 minutes to several hours.
+                            </div>
+                        </li>
+                        <li>
+                            <a class="cd-faq-trigger c_faq" href="#0">At what time do you stop accepting walk-ins?</a>
+                            <div class="cd-faq-content">
+                                We stop accepting walk-ins 1 hour before tax site closes. This is because the filing process is usually very lengthy, and
+                                we want to ensure accuracy.
+                            </div>
+                        </li>
+                    </ul>
 
-            <p id="cfaq6"><strong>6. There are no appointments available! What do I do?</strong></p>
-            <p>Due to our high demand as we get closer to the filing deadline, appointments are limited and go quickly. You
-                are welcome to walk-in; we recommend you come as early as possible since appointments have priority.</p>
-
-            <p id="cfaq7"><strong>7. What is the average wait time for walk-ins?</strong></p>
-            <p>Depending on how busy our tax sites are, the wait time may range from 15 minutes to several hours.</p>
-
-            <p id="cfaq8"><strong>8. At what time do you stop accepting walk-ins?</strong></p>
-            <p>We stop accepting walk-ins 1 hour before tax site closes. This is because the filing process is usually very
-                lengthy, and we want to ensure accuracy.</p>
-
-            <p id="cfaq9"><strong>9. How long will it take to complete my tax return?</strong></p>
-            <p>Depending on your individual situation, the process may range from 45 minutes to several hours. For each return,
-                we prepare, review, print, and walk-through it with the client to ensure accuracy and satisfaction before
-                filing. </p>
-
-            <p id="cfaq10"><strong>10. If I don’t have enough money in my account to pay my tax due, what do I do?</strong></p>
-            <p>First, you should always file your return on time to minimize your tax penalties. A tax extension does not give
-                you more time to pay any taxes owed; it only extends the deadline for filing your return! If you can pay
-                all your taxes in 120 days or less, you may qualify for a short-term extension to pay from the IRS; check
-                the IRS website. You can also pay off your debt over time by applying for an installment agreement, which
-                is a monthly payment plan. You may qualify for an online installment payment agreement with the IRS as long
-                as you owe $50,000 or less.</p>
-
-            <p id="cfaq11"><strong>11. When will I get my refund?</strong></p>
-            <p>If you e-file with us, we process returns at the end of every week and send it to the IRS. The IRS can take from
-                two weeks to a month to process your returns and deposit your refund.</p>
-
-            <p id="cfaq12"><strong>12. Where can I park?</strong></p>
-            <p><img src="images/parking.png" width="300" height="300"></p>
-            <p><em>Parking Rates/ Fee: </em>UCLA Parking Pay Stations give you short-term parking options in lots and structures
-                located throughout campus. Rates range from $1.00 for 20 minutes to $12 for the entire day.
-            </p>
-
-            <p id="cfaq13"><strong>13. Where are tax sites?</strong></p>
-            <p>Our on-campus tax sites are primarily located at <em>Ackerman Viewpoint Conference Rooms A and B</em> in Ackerman
-                Union at UCLA. We also have off-campus tax sites at different locations in the LA area; check the
-                <a href="#events">events calendar</a> for more information!
-            </p>
-            <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBnF50NhNSnpSDlIhA-YI6ixx1SGJgCnw8
-                &q=Ackerman+Union+308+Westwood+Plaza+Los+Angeles,+CA+90095" width="100%" height="450" frameborder="0" style="border:0"
-                allowfullscreen>
-            </iframe>
-
-            <p id="cfaq14"><strong>14. When are tax sites?</strong></p>
-            <p>Tax site times may vary depending on how close we are to April 15th or if the site is on-campus or off-campus.
-                Check the <a href="#events">events calendar</a> for up-to-date information!
-            </p>
+                    <ul id="c_sites" class="cd-faq-group c_faq">
+                        <li class="cd-faq-title c_faq">
+                            <h2>Tax Sites</h2>
+                        </li>
+                        <li>
+                            <a class="cd-faq-trigger c_faq" href="#0">When are tax sites?</a>
+                            <div class="cd-faq-content">
+                                Tax site times may vary depending on how close we are to April 15th or if the site is on-campus or off-campus. Check the
+                                <a href="#events">events calendar</a> for up-to-date information!
+                            </div>
+                        </li>
+                        <li>
+                            <a class="cd-faq-trigger c_faq" href="#0">Where are tax sites?</a>
+                            <div class="cd-faq-content">
+                                Our on-campus tax sites are primarily located at <em>Ackerman Viewpoint Conference Rooms A and B</em>                                in Ackerman Union at UCLA. We also have off-campus tax sites at different locations in the
+                                LA area; check the
+                                <a href="#events">events calendar</a> for more information!
+                                <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBnF50NhNSnpSDlIhA-YI6ixx1SGJgCnw8
+                                        &q=Ackerman+Union+308+Westwood+Plaza+Los+Angeles,+CA+90095" width="100%" height="450"
+                                    frameborder="0" style="border:0" allowfullscreen>
+                                </iframe>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="cd-faq-trigger c_faq" href="#0">Where can I park?</a>
+                            <div class="cd-faq-content">
+                                <img src="images/parking.png" width="300" height="300"><br />
+                                <em>Parking Rates/ Fee:</em> UCLA Parking Pay Stations give you short-term parking
+                                options in lots and structures located throughout campus. Rates range from $1.00 for 20 minutes
+                                to $12 for the entire day.
+                            </div>
+                        </li>
+                        <li>
+                            <a class="cd-faq-trigger c_faq" href="#0">How are VITA members qualified to file on my behalf?</a>
+                            <div class="cd-faq-content">
+                                All of our volunteers have undergone extensive tax filing training and are certified by the IRS to file tax returns. Additionally,
+                                each return is quality reviewed twice before being sent to the IRS, so at least three volunteers
+                                individually check your return before filing to ensure no mistakes are made.
+                            </div>
+                        </li>
+                        <li>
+                            <a class="cd-faq-trigger c_faq" href="#0">How long will it take to complete my tax return?</a>
+                            <div class="cd-faq-content">
+                                Depending on your individual situation, the process may range from 45 minutes to several hours. For each return, we prepare,
+                                review, print, and walk-through it with the client to ensure accuracy and satisfaction before
+                                filing.
+                            </div>
+                        </li>
+                    </ul>
+                    <ul id="c_filing" class="cd-faq-group c_faq">
+                        <li class="cd-faq-title c_faq">
+                            <h2>Filing Your Return</h2>
+                        </li>
+                        <li>
+                            <a class="cd-faq-trigger c_faq" href="#0">When will I get my refund?</a>
+                            <div class="cd-faq-content">
+                                If you e-file with us, we process returns at the end of every week and send it to the IRS. The IRS can take from two weeks
+                                to a month to process your returns and deposit your refund.
+                            </div>
+                        </li>
+                        <li>
+                            <a class="cd-faq-trigger c_faq" href="#0">If I don’t have enough money in my account to pay my tax due, what do I do?</a>
+                            <div class="cd-faq-content">
+                                First, you should always file your return on time to minimize your tax penalties. A tax extension does not give you more
+                                time to pay any taxes owed; it only extends the deadline for filing your return! If you can
+                                pay all your taxes in 120 days or less, you may qualify for a short-term extension to pay
+                                from the IRS; check the IRS website. You can also pay off your debt over time by applying
+                                for an installment agreement, which is a monthly payment plan. You may qualify for an online
+                                installment payment agreement with the IRS as long as you owe $50,000 or less.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <a href="#0" class="cd-close-panel c_faq">&#10006;</a>
+            </section>
         </div>
     </section>
 
@@ -317,7 +405,7 @@
         </ul>
     </footer>
 
-    <!-- Scripts -->
+    <!-- Main Template Scripts -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.poptrox.min.js"></script>
     <script src="assets/js/jquery.scrolly.min.js"></script>
@@ -326,6 +414,10 @@
     <script src="assets/js/util.js"></script>
     <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
     <script src="assets/js/main.js"></script>
+
+    <!-- FAQ Template -->
+    <script src="assets/js/jquery.mobile.custom.min.js"></script>
+    <script src="assets/js/faq.js"></script>
 
     <!-- Custom Scripts -->
     <script src="assets/js/custom.js"></script>

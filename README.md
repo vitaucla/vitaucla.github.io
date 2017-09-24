@@ -1,6 +1,6 @@
 # Welcome to the VITA at UCLA official website!
+Current developer: Ardis Lu  
 Originally created by Simon Zhou as part of the Community Service Commission.  
-Current maintainer: Ardis Lu
 
 # HTML
 ## index.html
@@ -25,7 +25,13 @@ Original stylesheet credits:
 >html5up.net | @ajlkn  
 >Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 
-To make modifications to the stylesheet, edit the _custom.scss file in assets/sass/. This file is injected at the end of main.scss and can be used to override any of the original styling in the template.
+FAQ stylesheet credits:  
+> CSS FAQ Template  
+> codyhouse.co | Sebastiano Guerriero  
+> https://codyhouse.co/gem/css-faq-template/  
+> Note: some customizations made to _faq.scss and faq.js to make it compatible with 2 FAQ sections and main theme.
+
+To make custom modifications to the stylesheet, edit the _custom.scss file in assets/sass/. This file is injected at the end of main.scss and can be used to override any of the original styling in the template.
 
 To save modifications, install SASS and use
 ```
@@ -42,6 +48,10 @@ Scripts used for main theme:
 > jquery.scrollex v0.2.1 | (c) @ajlkn | github.com/ajlkn/jquery.scrollex | MIT licensed  
 > jquery.scrolly v1.0.0-dev | (c) @ajlkn | MIT licensed  
 > skel.js v3.0.1 | (c) skel.io | MIT licensed  
-> main.js, util.js | @ajlkn | html5up.net/license
+> main.js, util.js | (c) @ajlkn | html5up.net/license
+
+Scripts used for FAQ sections:
+> jQuery Mobile v1.4.4 | (c) 2010, 2014 jQuery Foundation, Inc. | jquery.org/license  
+> Modernizr v2.8.3 | (c) Faruk Ates, Paul Irish, Alex Sexton | www.modernizr.com/license/  
 
 To add custom scripts, edit custom.js in assets/js/ and import it at the end of any pages.

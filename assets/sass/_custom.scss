@@ -4,6 +4,9 @@
     Use !important to force override if necessary (bad form, but makes maintenance easier).
 */
 
+/* CSS FAQ Template by Sebastiano Guerriero (https://codyhouse.co/gem/css-faq-template/) */
+@import "components/_faq";
+
 /* Resize and align logo. */
 #logo {
     width: 20%;
@@ -101,4 +104,11 @@ input[type="submit"] {
 /* When moving the mouse over the close button */
 .closebtn:hover {
     color: #1436DD;
+}
+
+/* Expand margins for the FAQ sections */
+.faq-container {
+    margin-left: 3em !important;
+    margin-right: 3em !important;
+    width: 100% !important;
 }
