@@ -13,9 +13,10 @@
     vertical-align: middle;
 }
 
-/* Add minimum size for desktop view breakpoint */
+/* Add breakpoints for desktop and mobile */
 @include skel-breakpoints((
-    desktop: '(min-width: 1000px)'
+	desktop: '(min-width: 1000px)',
+	mobile: '(max-width: 999px)',
 ));
 
 /* Move header and footer buttons closer to center. */
@@ -111,4 +112,27 @@ input[type="submit"] {
     margin-left: 3em !important;
     margin-right: 3em !important;
     width: 100% !important;
+}
+
+/* Adjustments to mobile headers: allow 'Volunteer Portal' and 'Go Back...' 
+    buttons to appear, make portal and back buttons pop out more, move logo to the left.*/
+@include breakpoint(mobile) {
+    .mobile-nav {
+        display: list-item !important;
+        color: #31708f !important;
+    }
+    #header {
+        nav {
+            display: inline-block;
+            ul {
+                li {
+                    display: none;
+                }
+            }
+        }
+        h1 {
+            text-align: left !important;
+            margin-left: 1em !important;
+        }
+    }
 }

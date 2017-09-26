@@ -52,7 +52,7 @@
                 <li><a href="#sponsors">Sponsors</a></li>
                 -->
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="volunteers.html">Volunteer Portal</a></li>
+                <li class="mobile-nav"><a href="volunteers.html">Volunteer Portal</a></li>
             </ul>
         </nav>
     </header>
@@ -108,7 +108,7 @@
             <p>Click on the links below to view each upcoming event. If you have any questions, email us at
                 <a href="mailto:vitaucla@gmail.com">vitaucla@gmail.com</a>.</p>
             <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showPrint=0&amp;showTabs=0&amp;
-                showCalendars=0&amp;showTz=0&amp;src=jn28jvhhlu4ihvb1h6t6i9i2co@group.calendar.google.com" border-width:
+                showCalendars=0&amp;showTz=0&amp;src=vitauclavolunteer%40gmail.com&ctz=America/Los_Angeles" border-width:
                 "0" width="100%" height="600">
             </iframe>
         </div>
@@ -224,19 +224,19 @@
                             <div class="cd-faq-content">
                                 <strong>Required for all:</strong> <br /> (1) Photo ID: Driver’s license, passport, student
                                 ID, etc. <br /> (2a) Social Security cards for you, your spouse and any dependents you are
-                                claiming on your return. <br />
-                                <em>Please bring the original document. For legal reasons we are unable to accept photos or copies!</em>                                <br /> (2b) An Individual Taxpayer Identification Number (ITIN) assignment letter may be
-                                substituted for you, your spouse, and your dependents if you do not have a Social Security
-                                number. <br /> (3) Bank account routing and account numbers if you would like to receive
-                                a direct deposit (a blank check is acceptable). <br />
+                                claiming on your return. Photo copies or electronic images of social security cards are acceptable.<br
+                                /> (2b) An Individual Taxpayer Identification Number (ITIN) assignment letter may be substituted
+                                for you, your spouse, and your dependents if you do not have a Social Security number. <br
+                                /> (3) Bank account routing and account numbers if you would like to receive a direct deposit
+                                (a blank check is acceptable). <br />
                                 <strong>If applicable to your situation:</strong> <br />(4) Wage and earning statements (Form
                                 W-2, W-2G, 1099-R, 1099-Misc) from all employers. <br />(5) Interest and dividend statements
                                 from banks or brokerages (Forms 1099). <br />(6a) All Forms 1095, Health Insurance Statements.
                                 <br />(6b) Health Insurance Exemption Certificate, if received. <br />(7) Form 1098-T for
                                 educational expenses (MyUCLA -> Finances and Jobs -> 1098T). <br />(8) Invoices indicating
                                 total amount paid for daycare provider and the daycare provider’s EIN or SSN.<br />
-                                <strong>Recommended:</strong> <br />(9) Copies of income transcripts from IRS and state.<br />
-                                (10) A copy of last year’s federal and state returns.<br />
+                                <strong>Recommended:</strong> <br />(9) Copies of income transcripts from IRS and state.<br
+                                /> (10) A copy of last year’s federal and state returns.<br />
                                 <strong>Notes for certain situations:</strong> <br />(1) To file taxes electronically on
                                 a married-filing-jointly (MFJ) tax return, <em>both spouses</em> must be present to sign
                                 the required forms. <br />(2a) If you are a foreign non-resident, we are unable to file tax
@@ -256,7 +256,7 @@
                             <a class="cd-faq-trigger c_faq" href="#0">Do I need to make an appointment?</a>
                             <div class="cd-faq-content">
                                 We accept walk-ins, but due to limited time and availability on each day, we cannot guarantee walk-ins will be served. If
-                                it is possible, please make an appointment to ensure service will be provided.
+                                you do not make an appointment, please be sure to arrive at least 2 hours before closing.
                             </div>
                         </li>
                         <li>
@@ -268,8 +268,12 @@
                         <li>
                             <a class="cd-faq-trigger c_faq" href="#0">There are no appointments available! What do I do?</a>
                             <div class="cd-faq-content">
-                                Due to our high demand as we get closer to the filing deadline, appointments are limited and go quickly. You are welcome
-                                to walk-in; we recommend you come as early as possible since appointments have priority.
+                                Unfortunately VITA UCLA does not offer tax consulting services outside of tax season. Appointments will be available in January.
+                                <!--
+                                Due to our high demand as we get closer to the filing deadline, appointments are limited
+                                and go quickly. You are welcome to walk-in; we recommend you come as early as possible since
+                                appointments have priority.
+                                -->
                             </div>
                         </li>
                         <li>
@@ -304,6 +308,7 @@
                                 Our on-campus tax sites are primarily located at <em>Ackerman Viewpoint Conference Rooms A and B</em>                                in Ackerman Union at UCLA. We also have off-campus tax sites at different locations in the
                                 LA area; check the
                                 <a href="#events">events calendar</a> for more information!
+                                <!-- See Google Maps Embedded API -->
                                 <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBnF50NhNSnpSDlIhA-YI6ixx1SGJgCnw8
                                         &q=Ackerman+Union+308+Westwood+Plaza+Los+Angeles,+CA+90095" width="100%" height="450"
                                     frameborder="0" style="border:0" allowfullscreen>
@@ -313,10 +318,11 @@
                         <li>
                             <a class="cd-faq-trigger c_faq" href="#0">Where can I park?</a>
                             <div class="cd-faq-content">
-                                <img src="images/parking.png" width="300" height="300"><br />
-                                <em>Parking Rates/ Fee:</em> UCLA Parking Pay Stations give you short-term parking
-                                options in lots and structures located throughout campus. Rates range from $1.00 for 20 minutes
-                                to $12 for the entire day.
+                                <em>Parking Rates / Fee:</em> UCLA Parking Pay Stations give you short-term parking options
+                                in lots and structures located throughout campus. Rates range from $1.00 for 20 minutes to
+                                $12 for the entire day.
+                                <!-- Multiple markers not supported on Embedded API. Must use normal Maps Javascript API. -->
+                                <div id="parking_map"></div>
                             </div>
                         </li>
                         <li>
@@ -343,8 +349,8 @@
                         <li>
                             <a class="cd-faq-trigger c_faq" href="#0">When will I get my refund?</a>
                             <div class="cd-faq-content">
-                                If you e-file with us, we process returns at the end of every week and send it to the IRS. The IRS can take from two weeks
-                                to a month to process your returns and deposit your refund.
+                                If you e-file with us, we send returns to the IRS within 3 days of your visit. The IRS can take from two weeks to a month
+                                to process your returns and deposit your refund.
                             </div>
                         </li>
                         <li>
@@ -421,6 +427,8 @@
 
     <!-- Custom Scripts -->
     <script src="assets/js/custom.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBL-6QPggaCE_Pq_0NolD93LqkACWlhR_8&callback=initMap"></script>
+    <!--<script src="assets/js/custom.js"></script>-->
 </body>
 
 </html>
