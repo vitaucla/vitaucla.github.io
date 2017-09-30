@@ -5,7 +5,10 @@
 */
 
 /* CSS FAQ Template by Sebastiano Guerriero (https://codyhouse.co/gem/css-faq-template/) */
-@import "components/_faq";
+@import "components/faq";
+
+/* ResponsiveSlides.js v1.55 */
+@import "components/slider";
 
 /* Resize and align logo. */
 #logo {

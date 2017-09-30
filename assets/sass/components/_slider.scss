@@ -1,0 +1,32 @@
+/* ResponsiveSlides.js v1.55 */
+
+.rslides {
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+  
+.rslides li {
+    -webkit-backface-visibility: hidden;
+    position: absolute;
+    display: none;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+  
+.rslides li:first-child {
+    position: relative;
+    display: block;
+    float: left;
+}
+  
+.rslides img {
+    display: inline-block;
+    height: auto;
+    width: 50%;
+    border: 0;
+}

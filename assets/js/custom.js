@@ -3,6 +3,30 @@
     Import this at the bottom of index.html.
 */
 
+/* ResponsiveSlides.js v1.55 */
+$(function () {
+    $(".rslides").responsiveSlides();
+});
+
+$(".rslides").responsiveSlides({
+    auto: true,             // Boolean: Animate automatically, true or false
+    speed: 1000,            // Integer: Speed of the transition, in milliseconds
+    timeout: 5000,          // Integer: Time between slide transitions, in milliseconds
+    pager: false,           // Boolean: Show pager, true or false
+    nav: false,             // Boolean: Show navigation, true or false
+    random: false,          // Boolean: Randomize the order of the slides, true or false
+    pause: false,           // Boolean: Pause on hover, true or false
+    pauseControls: false,    // Boolean: Pause when hovering controls, true or false
+    prevText: "Previous",   // String: Text for the "previous" button
+    nextText: "Next",       // String: Text for the "next" button
+    maxwidth: "",           // Integer: Max-width of the slideshow, in pixels
+    navContainer: "",       // Selector: Where controls should be appended to, default is after the 'ul'
+    manualControls: "",     // Selector: Declare custom pager navigation
+    namespace: "rslides",   // String: Change the default namespace used
+    before: function () { },   // Function: Before callback
+    after: function () { }     // Function: After callback
+});
+
 /* Use Google Maps Javascript API to embed parking map */
 function initMap() {
     var parking7 = {
@@ -20,15 +44,15 @@ function initMap() {
         lat: 34.072502,
         long: -118.444754
     };
-/*
-    var sheridan = {
-        info: '<strong>Parking Structure 4</strong><br>\r\
-					6600 N Sheridan Rd<br> Chicago, IL 60626<br>\
-					<a href="https://goo.gl/maps/QGUrqZPsYp92">Get Directions</a>',
-        lat: 42.002707,
-        long: -87.661236
-    };
-*/
+    /*
+        var sheridan = {
+            info: '<strong>Parking Structure 4</strong><br>\r\
+                        6600 N Sheridan Rd<br> Chicago, IL 60626<br>\
+                        <a href="https://goo.gl/maps/QGUrqZPsYp92">Get Directions</a>',
+            lat: 42.002707,
+            long: -87.661236
+        };
+    */
     var locations = [
         [parking7.info, parking7.lat, parking7.long, 0],
         [parking4.info, parking4.lat, parking4.long, 1]
