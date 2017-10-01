@@ -29,57 +29,60 @@ $(".rslides").responsiveSlides({
 
 /* Use Google Maps Javascript API to embed parking map */
 function initMap() {
-    var parking7 = {
-        info: '<strong>Parking Structure 7</strong><br>\
-            Large parking space under the Intramural Field. Enter from Sunset Boulevard onto Charles E. Young Drive. Exit the lot on the other side and turn left towards the Bruin Bear to reach Ackerman Union.<br>\
-			<a href="#">Get Directions</a>',
-        lat: 34.073041,
-        long: -118.446902
-    };
-
-    var parking4 = {
-        info: '<strong>Chipotle on Belmont</strong><br>\
-            Large underground parking space right as you enter from Sunset Boulevard. Exit the lot in Wilson Plaza and walk past the Student Activities Center to reach Ackerman Union.<br>\
-					<a href="#">Get Directions</a>',
-        lat: 34.072502,
-        long: -118.444754
-    };
-    /*
-        var sheridan = {
-            info: '<strong>Parking Structure 4</strong><br>\r\
-                        6600 N Sheridan Rd<br> Chicago, IL 60626<br>\
-                        <a href="https://goo.gl/maps/QGUrqZPsYp92">Get Directions</a>',
-            lat: 42.002707,
-            long: -87.661236
-        };
-    */
-    var locations = [
-        [parking7.info, parking7.lat, parking7.long, 0],
-        [parking4.info, parking4.lat, parking4.long, 1]
-        // [sheridan.info, sheridan.lat, sheridan.long, 2],
-    ];
-
+    var ucla_center = { lat: 34.0775, lng: -118.4575 };
     var map = new google.maps.Map(document.getElementById('parking_map'), {
-        zoom: 13,
-        center: new google.maps.LatLng(34.070389, -118.444226), // Ackerman Union
-        mapTypeId: google.maps.MapTypeId.ROADMAP
+        zoom: 15,
+        center: ucla_center,
+        styles: [
+            {
+                featureType: 'poi',
+                stylers: [{ visibility: "off" }]
+            }
+        ]
     });
-
-    var infowindow = new google.maps.InfoWindow({});
-
-    var marker, i;
-
-    for (i = 0; i < locations.length; i++) {
-        marker = new google.maps.Marker({
-            position: new google.maps.LatLng(locations[i][1], locations[i][2]),
-            map: map
+    var markers = [
+        {
+            "title": 'Ackerman Union',
+            "lat": '34.070614',
+            "lng": '-118.444522',
+            "description": "VITA at UCLA's on-campus tax sites are located at Ackerman Union in Viewpoint Conference Rooms A and B (A-Level).",
+            "icon": "images/marker_icon.png"
+        },
+        {
+            "title": 'Parking Structure 4',
+            "lat": '34.072461',
+            "lng": '-118.444742',
+            "description": 'Parking Structure 4 is the closest parking structure to our on-campus tax sites. After you park and exit up into Wilson Plaza, walk south towards the Bruin Bear to reach Ackerman Union.'
+        },
+        {
+            "title": 'Parking Structure 7',
+            "lat": '34.073042',
+            "lng": '-118.446912',
+            "description": 'Parking Structure 7 is a large underground lot underneath the IM field. After you park, exit the lot on the side facing Pauley Pavillion and walk east towards the Bruin Bear to reach Ackerman Union.'
+        },
+        {
+            "title": 'Parking Structure 8',
+            "lat": '34.067838',
+            "lng": '-118.446573',
+            "description": 'Parking Structure 8 is an outdoor lot near the Career Center. After you park, exit onto Westwood Plaza and walk north to reach Ackerman Union.'
+        }
+    ];
+    var infowindow = new google.maps.InfoWindow();
+    for (var i = 0; i < markers.length; i++) {
+        var data = markers[i];
+        var marker_icon = data.icon ? data.icon : "";
+        var marker = new google.maps.Marker({
+            position: new google.maps.LatLng(data.lat, data.lng),
+            map: map,
+            title: data.title,
+            description: data.description,
+            icon: marker_icon
         });
-
-        google.maps.event.addListener(marker, 'click', (function (marker, i) {
+        google.maps.event.addListener(marker, 'click', (function (marker) {
             return function () {
-                infowindow.setContent(locations[i][0]);
+                infowindow.setContent(marker.description);
                 infowindow.open(map, marker);
             }
-        })(marker, i));
+        })(marker));
     }
 }
