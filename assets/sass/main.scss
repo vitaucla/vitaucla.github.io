@@ -51,29 +51,29 @@
 	@import 'layout/main';
 	@import 'layout/footer';
 
-/* Intro */
+/* Home */
 
-	#intro {
-		background: url('images/overlay.png'), url('../../images/intro.jpg');
+	#home {
+		background: url('images/overlay.png'), url('../../images/home.jpg');
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, bottom center;
 		background-repeat: repeat, no-repeat;
 	}
 
-/* One */
+/* About */
 
-	#one {
-		background: url('images/overlay.png'), url('../../images/one.jpg');
+	#about {
+		background: url('images/overlay.png'), url('../../images/about.jpg');
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
 	}
 
-/* Two */
+/* Join */
 
-	#two {
-		background: url('images/overlay.png'), url('../../images/two.jpg');
+	#join {
+		background: url('images/overlay.png'), url('../../images/join.jpg');
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
