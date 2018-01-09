@@ -21,6 +21,9 @@
     <meta name="msapplication-config" content="images/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
 
+    <!-- Slick carousel http://kenwheeler.github.io -->
+    <link rel="stylesheet" href="assets/css/slick.min.css" />
+
     <!-- For FAQ -->
     <script src="assets/js/modernizr.js"></script>
 </head>
@@ -338,12 +341,12 @@
                         <li>
                             <a class="cd-faq-trigger c_faq" href="#0">There are no appointments available! What do I do?</a>
                             <div class="cd-faq-content">
-                                Unfortunately VITA UCLA does not offer tax consulting services outside of tax season. Appointments will be available in January.
                                 <!--
+                                Unfortunately VITA UCLA does not offer tax consulting services outside of tax season. Appointments will be available in January.
+                                -->
                                 Due to our high demand as we get closer to the filing deadline, appointments are limited
                                 and go quickly. You are welcome to walk-in; we recommend you come as early as possible since
                                 appointments have priority.
-                                -->
                             </div>
                         </li>
                         <li>
@@ -449,23 +452,23 @@
         <div class="content container">
             <h2>Our Sponsors</h2>
             <p></p>
-            <ul class="rslides">
-                <li>
+            <div class="sponsor-slider">
+                <div>
                     <img src="images/pwc.png" alt="">
-                </li>
-                <li>
+                </div>
+                <div>
                     <img src="images/ey.png" alt="">
-                </li>
-                <li>
+                </div>
+                <div>
                     <img src="images/squarmilner.png" alt="">
-                </li>
-                <li>
+                </div>
+                <div>
                     <img src="images/becker.png" alt="">
-                </li>
-                <li>
+                </div>
+                <div>
                     <img src="images/roger.png" alt="">
-                </li>
-            </ul>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -504,8 +507,9 @@
         </ul>
     </footer>
 
-    <!-- Main Template Scripts -->
+    <!-- jQuery + Template Scripts -->
     <script src="assets/js/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="assets/js/jquery.poptrox.min.js"></script>
     <script src="assets/js/jquery.scrolly.min.js"></script>
     <script src="assets/js/jquery.scrollex.min.js"></script>
@@ -518,13 +522,25 @@
     <script src="assets/js/jquery.mobile.custom.min.js"></script>
     <script src="assets/js/faq.js"></script>
 
-    <!-- ResponsiveSlides.js v1.55 -->
-    <script src="assets/js/responsiveslides.min.js"></script>
+    <!-- Slick carousel -->
+    <script src="assets/js/slick.min.js"></script>
 
     <!-- Custom Scripts -->
     <script src="assets/js/custom.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBnF50NhNSnpSDlIhA-YI6ixx1SGJgCnw8&callback=initMap"></script>
-    <!--<script src="assets/js/custom.js"></script>-->
+    <!-- Slick carousel -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.sponsor-slider').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                prevArrow: '',
+                nextArrow: ''
+            });
+        });
+    </script>
 </body>
 
 </html>

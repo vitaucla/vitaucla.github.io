@@ -146,3 +146,8 @@ input[type="submit"] {
     height: 400px;
     background-color: grey;
 }
+
+/* Override Slick carousel CSS */
+.slick-slide img {
+    display: inline !important;
+}
