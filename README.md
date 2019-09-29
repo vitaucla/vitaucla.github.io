@@ -1,5 +1,6 @@
 # Welcome to the VITA at UCLA official website!
-Current developer: Ardis Lu  
+Current developer: Will Liu and Jessica Cheng 
+Previous developer(s): Ardis Lu
 Originally created by Simon Zhou as part of the Community Service Commission.  
 
 # HTML
