@@ -1,5 +1,5 @@
 # Welcome to the VITA at UCLA official website!
-Current developer: Will (Wilbert) Liu and Jessica Cheng
+Current developer: (Will) Wilbert Liu and Jessica Cheng
 
 Previous developer(s): Ardis Lu
 
