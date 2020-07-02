@@ -1,7 +1,7 @@
 # Welcome to the VITA at UCLA official website!
-Current developer: (Will) Wilbert Liu
+Current developer:
 
-Previous developer(s): Ardis Lu
+Previous developer(s): Ardis Lu, Natalie Joseph, Christopher Wu, Wilbert Liu
 
 Originally created by Simon Zhou as part of the Community Service Commission.  
 
