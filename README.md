@@ -58,3 +58,5 @@ Scripts used for FAQ sections:
 > Modernizr v2.8.3 | (c) Faruk Ates, Paul Irish, Alex Sexton | www.modernizr.com/license/  
 
 To add custom scripts, edit custom.js in assets/js/ and import it at the end of any pages.
+
+test
