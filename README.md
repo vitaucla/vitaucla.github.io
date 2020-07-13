@@ -1,5 +1,5 @@
 # Welcome to the VITA at UCLA official website!
-Current developer:Alan Tran
+Current developer:Alan Tran, Cassandra Tai
 
 Previous developer(s): Ardis Lu, Natalie Joseph, Christopher Wu, Wilbert Liu
 
