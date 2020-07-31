@@ -1,0 +1,88 @@
+﻿body {
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    margin: 0 px;
+    height: 100%;
+    padding: 0 px;
+    box-sizing: border-box;
+    color: #24305E;
+    /*background: lightblue; */
+}
+
+header {
+    display: flex;
+    /*background: lightblue;*/
+    margin: auto;
+    width = 90%;
+}
+
+/* Style tab links */
+.tablink {
+    box-sizing: border-box;
+    background-color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 12px;
+    font-size: 15px;
+    transition: 0.3s;
+    /*color: #24305E;*/
+}
+
+    .tablink:hover {
+        background-color: #A8D0E6;
+    }
+
+.home, .about, .volunteers {
+    color: #24305E;
+    display: none;
+    padding: 100px 20px;
+    /*height: 100%;*/
+    min-height: 100%;
+}
+
+.home h1 {
+    font-size: x-large;
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+}
+
+/* sidenav bar for volunteers section*/
+.sidenav {
+    width: 150px;
+    position: fixed;
+    z-index: 1;
+    top: 20px;
+    left: 10px;
+    background: #F8E9A1;
+    /*overflow-x: hidden; */
+    padding: 5px;
+    color: white;
+}
+
+    .sidenav a {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 22px;
+        color: #2196F3;
+        display: block;
+    }
+
+        .sidenav a:hover {
+            color: #A8D0E6;
+        }
+
+    .main {
+        margin-left: 160px; /* Same width as the sidebar + left position in px */
+        font-size: 28px; /* Increased text to enable scrolling */
+        padding: 10px 10px;
+    }
+    @media screen and (max-height: 450px) {
+        .sidenav {
+            padding-top: 15px;
+        
+        }
+
+        .sidenav a {
+            font-size: 18px;
+        }
+}
