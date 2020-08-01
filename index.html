@@ -23,45 +23,6 @@
 
     <!-- For FAQ -->
     <script src="assets/js/modernizr.js"></script>
-
-    <!-- Style Tabs-->
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-        /* Set height of body and the document to 100% */
-        body, html {
-            height: 100%;
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        /* Style tab links */
-        .tablink {
-            background-color: white;
-            float: left;
-            border: none;
-            outline: none;
-            cursor: pointer;
-            padding: 10px 12px;
-            font-size: 15px;
-            transition: 0.3s;
-            color: #24305E;
-        }
-
-            .tablink:hover {
-                background-color: #A8D0E6;
-            }
-
-        /* Style the tab content (and add height:100% for full page content) */
-        .tabcontent {
-            color: #24305E;
-            display: none;
-            padding: 100px 20px;
-            /*height: 100%;*/
-            min-height: 100%;
-        }
-    </style>
 </head>
 
 <body>
@@ -77,25 +38,10 @@
     <!-- Header -->
     <header id="header">
         <!-- Logo -->
-        <!--
         <h1>
             <img id="logo" src="images/logo.png">
         </h1>
-                -->
-        <!-- Full Page Tabs-->
-        <img id="logo" src="images/logo.png" style="width:125px;margin:12px;margin-right:20px" align="right"></>
-        <button class="tablink" onclick="openPage('home')" id="defaultOpen">Home</button>
-        <button class="tablink" onclick="openPage('about')">About</button>
-        <!-- <button class="tablink" onclick="openPage('volunteer Info')">Volunteer Info</button> -->
-        <button class="tablink" onclick="openPage('join')">Join</button>
-        <button class="tablink" onclick="openPage('appointments')">Appointments</button>
-        <button class="tablink" onclick="openPage('volunteerFaq')">Volunteer FAQ</button>
-        <button class="tablink" onclick="openPage('clientFaq')">Client FAQ</button>
-        <button class="tablink" onclick="openPage('sponsors')">Sponsors</button>
-        <button class="tablink" onclick="openPage('contact')">Contact</button>
-        <button class="tablink"><a href="volunteers.html">Volunteer Portal</a></button>
-
-        <!-- Nav
+        <!-- Nav -->
         <nav id="nav">
             <ul>
                 <li>
@@ -103,9 +49,6 @@
                 </li>
                 <li>
                     <a href="#about">About</a>
-                </li>
-                <li>
-                    <a href="volunteer_info.html">Volunteer Info</a>
                 </li>
                 <li>
                     <a href="#join">Join</a>
@@ -129,26 +72,21 @@
                     <a href="volunteers.html">Volunteer Portal</a>
                 </li>
             </ul>
-        </nav>-->
+        </nav>
     </header>
 
     <!-- Home -->
-    <div id="home" class="tabcontent">
+    <section id="home" class="main style1 dark fullscreen">
         <div class="content container">
-            <h2 style="color:white">Volunteer Income Tax Assistance at UCLA</h2>
+            <h2>Volunteer Income Tax Assistance</h2>
+            <h1>
+                at UCLA</h2>
+                <a href="#about" class="button style2 down"></a>
         </div>
-        <div class="content container">
-            <p style="color:white"><strong>
-    *Please note that we will not be having anymore tax sites for this year!* <br /> <br />
-    Currently, we are not offering any appointments. Please check back January of next year for our tax site availability. If you have any questions or concerns, please submit them through our contact form.
-</strong></p>
-        </div>
-
-        <!--<a href="#sponsors" class="button style2 down anchored"></a>-->
-    </div>
+    </section>
 
     <!-- About -->
-    <div id="about" class="tabcontent">
+    <section id="about" class="main style2 right dark fullscreen">
         <div class="content box style2">
             <h2>About</h2>
             <p>
@@ -160,12 +98,14 @@
                 otherwise would go without aid. Each year, we train approximately 200 UCLA undergraduate students in individual
                 income tax preparation. In 2017, our volunteers served hundreds of clients, saving them over $450,000 through
                 tax refunds and credits.
+
             </p>
         </div>
-    </div>
+        <a href="#join" class="button style2 down anchored"></a>
+    </section>
 
     <!-- Join -->
-    <dic id="join" class="tabcontent">
+    <section id="join" class="main style2 left dark fullscreen">
         <div class="content box style2">
             <h2>Volunteer</h2>
             <p>
@@ -204,9 +144,10 @@
                 -->
             </p>
         </div>
-    </dic>
+        <a href="#appointments" class="button style2 down anchored"></a>
+    </section>
 
-    <div id="appointments" class="tabcontent">
+    <section id="appointments" class="main style3 primary">
         <div class="content container">
             <!--
             <h2>Appointments Calendar</h2>
@@ -223,7 +164,7 @@
                 </iframe>
             </div>
             </p>
-
+            -->
 
             <p>
                 <strong>*We are no longer preparing tax returns for the remainder of the year. Please read below*</strong>
@@ -231,16 +172,16 @@
             <a target="_blank" href="https://drive.google.com/file/d/1R9v0xKXN8bcVtT-rjwpdD5iJcTL_Um0v">
                 <span class="button" style="margin-bottom: 5px;">COVID-19 Announcement</span>
             </a>
-            -->
-            <p><strong>*Please check back in January for tax year 2020 appointments*</strong></p>
 
+            <!--<p><strong>*Please check back in January for tax year 2019 appointments*</strong></p>
+            -->
             <!--
              <p><strong>*Please note that we will not be having anymore tax sites for this year!*</strong></p>
             -->
         </div>
-    </div>
+    </section>
 
-    <div id="volunteerFaq" class="tabcontent">
+    <section id="volunteerFaq" class="main style3 primary">
         <div class="content container faq-container">
             <h2>Volunteer FAQs</h2>
             <section class="cd-faq v_faq">
@@ -339,9 +280,9 @@
                 <a href="#0" class="cd-close-panel v_faq">&#10006;</a>
             </section>
         </div>
-    </div>
+    </section>
 
-    <div id="clientFaq" class="tabcontent">
+    <section id="clientFaq" class="main style3 primary">
         <div class="content container faq-container">
             <h2>Client FAQs</h2>
             <section class="cd-faq c_faq">
@@ -564,49 +505,42 @@
                 <a href="#0" class="cd-close-panel c_faq">&#10006;</a>
             </section>
         </div>
-    </div>
+    </section>
 
     <!-- Sponsors -->
-    <div id="sponsors" class="tabcontent">
+    <section id="sponsors" class="main style3 primary">
         <div class="content container">
             <h2>Our Sponsors</h2>
-            <p>
-                <img src="images/pwc.png" alt="" style="width:250px;height:200px;margin-right:100px;" align="left"></>
-                <img src="images/ey.png" alt="" style="width:250px;height:200px;margin-left:100px;">
-                <img src="images/squarmilner.png" alt="" style="width:250px;height:300px;">
-                <img src="images/becker.png" alt="" style="width:250px;height:300px;">
-                <img src="images/roger.png" alt="" style="width:250px;height:300px;">
-                <img src="images/deloitte.png" alt="" style="width:250px;height:300px;">
-                <img src="images/kpmg.png" alt="" style="width:250px;height:300px;">
-            </p>
-            <!--<div class="sponsor-slider">
-                <div>
-                    <img src="images/pwc.png" alt="">
-                </div>
-                <div>
-                    <img src="images/ey.png" alt="">
-                </div>
-                <div>
-                    <img src="images/squarmilner.png" alt="">
-                </div>
-                <div>
-                    <img src="images/becker.png" alt="">
-                </div>
-                <div>
-                    <img src="images/roger.png" alt="">
-                </div>
-                <div>
-                    <img src="images/deloitte.png" alt="">
-                </div>
-                <div>
-                    <img src="images/kpmg.png" alt="">
-                </div>
-            </div>-->
+            <p></p>
+            <div class="row">
+                <div class="column"> <img src="images/pwc.png" alt="PWC" style="width:100px;height:75px;"> </div>
+                <div class="column"> <img src="images/ey.png" alt="EY" style="width:100px;height:75px;"> </div>
+                <div class="column"> <img src="images/becker.png" alt="Becker" style="width:100px;height:125px;"> </div>
+                <div class="column"> <img src="images/squarmilner.png" alt="Squar Milner" style="width:100px;height:125px;"> </div>
+                <div class="column"> <img src="images/roger.png" alt="Roger" style="width:100px;height:125px;"> </div>
+                <div class="column"> <img src="images/deloitte.png" alt="Deloitte" style="width: 100px; height: 125px;"> </div>
+                <div class="column"> <img src="images/kpmg.png" alt="KPMG" style="width: 100px; height: 125px;"> </div>
+            </div>
         </div>
-    </div>
+    </section>
+    <style>
+        /*Sponsors*/
+        .column {
+            float: left;
+            width: 120px;
+            overflow: hidden;
+        }
+
+        /* Clearfix (clear floats) */
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
 
     <!-- Contact -->
-    <div id="contact" class="tabcontent">
+    <section id="contact" class="main style3 secondary">
         <div class="content container">
             <h2>Reach Out to Us</h2>
             <p>
@@ -623,7 +557,7 @@
                 </form>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- Footer -->
     <footer id="footer">
@@ -674,25 +608,6 @@
                 nextArrow: ''
             });
         });
-    </script>
-    <!-- Tab Scripts -->
-    <script>
-        function openPage(pageName, elmnt, color) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-            tablinks = document.getElementsByClassName("tablink");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].style.backgroundColor = "";
-            }
-            document.getElementById(pageName).style.display = "block";
-            elmnt.style.backgroundColor = color;
-        }
-
-        // Get the element with id="defaultOpen" and click on it
-        document.getElementById("defaultOpen").click();
     </script>
 </body>
 
