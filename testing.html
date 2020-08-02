@@ -5,13 +5,16 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./style.css" />
+    <!-- For FAQ -->
+    <script src="assets/js/modernizr.js"></script>
+
 
     <title>VITA at UCLA</title>
 
     <!-- Header -->
     <div class="fixed-header">
         <!-- Full Page Tabs-->
-        <img id="logo" src="images/logo.png" style="width:170px;margin:12px;">
+        <img id="logo" src="images/logo.png" style="width:200px;margin:12px;">
         <div id="header" class="row">
             <!--<div class="column"> <img id="logo" src="images/logo.png" style="width:170px;margin:12px;"> </div>-->
             <div class="column"> <button class="tablink" onclick="openPage('home')" id="defaultOpen">Home</button> </div>
@@ -25,7 +28,7 @@
     </div>
 </head>
 
-<body>    
+<body>
     <!-- Home -->
     <div id="home" class="tabcontent">
         <div class="main">
@@ -126,8 +129,112 @@
                     -->
                 </p>
             </div>
+
+            <!--Volunteer FAQ-->
+            <div id="volunteerfaq" class="nav">
+                <div class="content container faq-container">
+                    <h2>Volunteer FAQs</h2>
+                    <!--
+    <section class="cd-faq v_faq">
+        <ul class="cd-faq-categories v_faq">
+            <li>
+                <a href="#v_applying">Applying</a>
+            </li>
+            <li>
+                <a href="#v_training">Training</a>
+            </li>
+            <li>
+                <a href="#v_other">Other</a>
+            </li>
+        </ul>
+
+        <div class="cd-faq-items v_faq">
+            <ul id="v_applying" class="cd-faq-group v_faq">
+                <li class="cd-faq-title v_faq">
+                    <h2>Applying</h2>
+                </li>
+                <li>
+                    <a class="cd-faq-trigger v_faq" href="#0">How can I apply?</a>
+                    <div class="cd-faq-content">
+                        Details about the application can be found
+                        <a href="#join">here</a>.
+                    </div>
+                </li>
+
+                <li>
+                    <a class="cd-faq-trigger v_faq" href="#0">How many volunteers do you accept?</a>
+                    <div class="cd-faq-content">
+                        We do not have a maximum cap for volunteers. If you are passionate about service and interested in learning more about taxes,
+                        we want you!
+                    </div>
+                </li>
+
+                <li>
+                    <a class="cd-faq-trigger v_faq" href="#0">Do I have to be a particular major to apply?</a>
+                    <div class="cd-faq-content">
+                        No, we accept all majors and minors, ranging from Business-Economics to Music Performance.
+                    </div>
+                </li>
+                <li>
+                    <a class="cd-faq-trigger v_faq" href="#0">What if I have no experience working with taxes?</a>
+                    <div class="cd-faq-content">
+                        No worries! We provide you all the necessary training during Fall or Winter quarter.
+                    </div>
+                </li>
+            </ul>
+
+            <ul id="v_training" class="cd-faq-group v_faq">
+                <li class="cd-faq-title v_faq">
+                    <h2>Training</h2>
+                </li>
+                <li>
+                    <a class="cd-faq-trigger v_faq" href="#0">When are the training dates?</a>
+                    <div class="cd-faq-content">
+                        We have training most Tuesday and Sunday nights from 6 - 8 PM at designated locations.
+                    </div>
+                </li>
+                <li>
+                    <a class="cd-faq-trigger v_faq" href="#0">Are presentation materials posted online?</a>
+                    <div class="cd-faq-content">
+                        Yes, we try our best to post all of our training materials online for review shortly before the training date. Check your emails and/or the volunteer portal for updates!
+                    </div>
+                </li>
+            </ul>
+
+            <ul id="v_other" class="cd-faq-group v_faq">
+                <li class="cd-faq-title v_faq">
+                    <h2>Other</h2>
+                </li>
+                <li>
+                    <a class="cd-faq-trigger v_faq" href="#0">How can I become a QR if I am a returning volunteer?</a>
+                    <div class="cd-faq-content">
+                        QR applications will be sent out to our official volunteers through email.
+                    </div>
+                </li>
+                <li>
+                    <a class="cd-faq-trigger v_faq" href="#0">What is the time commitment?</a>
+                    <div class="cd-faq-content">
+                        For Fall volunteers, the requirement is 12 hours for Winter and 9 hours for Spring quarter. For Winter volunteers, the requirement
+                        is 9 hours during the Winter and 9 hours during the Spring. For both Fall and Winter volunteers,
+                        you are required to complete at least 2 tax returns each quarter.
+                    </div>
+                </li>
+                <li>
+                    <a class="cd-faq-trigger v_faq" href="#0">Are the info session slides posted online?</a>
+                    <div class="cd-faq-content">
+                        Yes, the Fall 2019 info session slides can be accessed
+                        <a href="https://docs.google.com/presentation/d/15e7qhWaYidbdRIkauLlMGO3BsH4Pfu9Bbj2oj0FOQW0/">here</a>.
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <a href="#0" class="cd-close-panel v_faq">&#10006;</a>
+    </section>-->
+                </div>
+                </div> 
         </div>
     </div>
+
 
     <div id="clientFaq" class="tabcontent">
         <div class="main">
@@ -135,6 +242,7 @@
 
         </div>
     </div>
+
 
     <div id="contact" class="tabcontent">
         <div class="main">
@@ -200,6 +308,14 @@
         </div>
     </div>
 
+    <!-- FAQ Template -->
+    <script src="assets/js/jquery.mobile.custom.min.js"></script>
+    <script src="assets/js/faq.js"></script>
+
+    <!-- Custom Scripts -->
+    <script src="assets/js/custom.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBnF50NhNSnpSDlIhA-YI6ixx1SGJgCnw8&callback=initMap"></script>
+    
     <!-- Tab Scripts -->
     <script>
         function openPage(pageName, elmnt, color) {
