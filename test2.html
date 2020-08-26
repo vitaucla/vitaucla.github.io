@@ -46,7 +46,7 @@
             padding: 10px 12px;
             font-size: 15px;
             transition: 0.3s;
-            color: #24305E;            
+            color: #24305E;
         }
 
             .tablink:hover {
@@ -58,11 +58,127 @@
             color: #24305E;
             display: none;
             padding: 100px 20px;
-            /*height: 100%;*/
             min-height: 100%;
         }
+
         #header {
-            overflow: auto;
+            overflow: visible;
+            height: 12%;            
+        }
+    </style>
+
+    <!--styling for topNav-->
+    <style>
+        .topnav {
+            overflow: hidden;
+            background-color: white;
+            color: #A8D0E6;
+            width: 100%;
+        }
+
+            .topnav a {
+                float: left;
+                display: block;
+                color: #A8D0E6;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+
+            .topnav .icon {
+                display: none;
+            }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+            .dropdown .dropbtn {
+                font-size: 17px;
+                border: none;
+                outline: none;
+                color: #A8D0E6;
+                padding: 14px 16px;
+                background-color: inherit;
+                font-family: inherit;
+                margin: 0;
+            }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+            .dropdown-content a {
+                float: none;
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+            }
+
+        .topnav a:hover, .dropdown:hover .dropbtn {
+            background-color: white;
+            color: #A8D0E6;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #A8D0E6;
+            color: white;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        @media screen and (max-width: 600px) {
+            .topnav a:not(:first-child), .dropdown .dropbtn {
+                display: none;
+            }
+
+            .topnav a.icon {
+                float: right;
+                display: block;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .topnav.responsive {
+                position: relative;
+            }
+
+                .topnav.responsive .icon {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                }
+
+                .topnav.responsive a {
+                    float: none;
+                    display: block;
+                    text-align: left;
+                }
+
+                .topnav.responsive .dropdown {
+                    float: none;
+                }
+
+                .topnav.responsive .dropdown-content {
+                    position: relative;
+                }
+
+                .topnav.responsive .dropdown .dropbtn {
+                    display: block;
+                    width: 100%;
+                    text-align: left;
+                }
         }
     </style>
 </head>
@@ -78,30 +194,45 @@
         <a href="images/appointments.pdf" target="_blank">here</a>)!
     </div> -->
     <!-- Header -->
+    <div class="topnav" id="header">
+        <button class="tablink" onclick="openPage('home')"><img id="logo" src="images/logo.png" style="width:200px;margin:12px;"></button>
+        <button class="tablink" onclick="openPage('home')" id="defaultOpen">Home</button>
+        <button class="tablink" onclick="openPage('about')">About</button>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="openPage('volunteers')">Volunteers<i class="faq-container fa-caret-down"></i> </button>
+            <div class="dropdown-content">
+                <button class="tablink" onclick="openPage('joinUs')">Join Us</button>
+                <button class="tablink" onclick="openPage('apply')">Apply</button>
+                <button class="tablink" onclick="openPage('volunteerfaq')">FAQs</button>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="openPage('clients')">Clients<i class="faq-container fa-caret-down"></i></button>
+            <div class="dropdown-content">
+                <a href="#clientelig">Client Eligibility</a>
+                <a href="#appointments">Appointments</a>
+                <a href="#clientfaq">FAQs</a>
+            </div>
+        </div>
+        <button class="tablink"><a href="volunteers.html">Volunteer Portal</a></button>
+        <button class="tablink"><a href="index.html">Index</a></button>
+        <button class="tablink"><a href="test3.html">test3</a></button>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+    <!--
     <header id="header">
-        <!-- Logo -->
-        <!--
-    <h1>
-        <img id="logo" src="images/logo.png">
-    </h1>
-            -->
-        <!-- Full Page Tabs-->
         <img id="logo" src="images/logo.png" style="width:125px;margin:12px;margin-right:20px" align="right"></>
         <button class="tablink" onclick="openPage('home')" id="defaultOpen">Home</button>
         <button class="tablink" onclick="openPage('about')">About</button>
         <button class="tablink" onclick="openPage('volunteers')">Volunteers</button>
         <button class="tablink" onclick="openPage('clients')">Clients</button>
-        <!-- <button class="tablink" onclick="openPage('join')">Join</button>
-    <button class="tablink" onclick="openPage('appointments')">Appointments</button>
-    <button class="tablink" onclick="openPage('volunteerFaq')">Volunteer FAQ</button>
-    <button class="tablink" onclick="openPage('clientFaq')">Client FAQ</button> -->
-        <button class="tablink" onclick="openPage('sponsors')">Sponsors</button>
         <button class="tablink" onclick="openPage('contact')">Contact</button>
         <button class="tablink"><a href="volunteers.html">Volunteer Portal</a></button>
         <button class="tablink"><a href="index.html">Index</a></button>
         <button class="tablink"><a href="test1.html">Test1</a></button>
     </header>
 
+    -->
     <!-- Home -->
     <div id="home" class="tabcontent">
         <div class="content container">
@@ -116,6 +247,30 @@
             </p>
         </div>
 
+        <div id="sponsors" class="content box style2">
+            <h2>Our Sponsors</h2>
+            <div class="row">
+                <div class="column"> <img src="images/pwc.png" alt="PWC" style="width:100px;height:75px;"> </div>
+                <div class="column"> <img src="images/ey.png" alt="EY" style="width:100px;height:75px;"> </div>
+                <div class="column"> <img src="images/becker.png" alt="Becker" style="width:100px;height:125px;"> </div>
+                <div class="column"> <img src="images/squarmilner.png" alt="Squar Milner" style="width:100px;height:125px;"> </div>
+                <div class="column"> <img src="images/roger.png" alt="Roger" style="width:100px;height:125px;"> </div>
+                <div class="column"> <img src="images/deloitte.png" alt="Deloitte" style="width: 100px; height: 125px;"> </div>
+                <div class="column"> <img src="images/kpmg.png" alt="KPMG" style="width: 100px; height: 125px;"> </div>
+            </div>
+        </div>
+
+        <style>
+            #sponsors {
+                background-color: white;
+                margin: 0;
+            }
+            /*Sponsors*/
+            .column {
+                float: left;
+                overflow: hidden;
+            }
+        </style>
         <!--<a href="#sponsors" class="button style2 down anchored"></a>-->
     </div>
 
@@ -136,8 +291,9 @@
         </div>
     </div>
 
-
-    <div id="volunteers" class="tabcontent">
+    <!--Join and Training-->
+    <div id="joinUs" class="tabcontent">
+        <!--Join-->
         <div id="join" class="content box style2" style="background:#24305E;color:white">
             <h2>Why Join?</h2>
             <p>
@@ -151,12 +307,168 @@
             </p>
         </div>
 
+        <!--Training-->
         <div id="training" class="content box style2" style="color:#374785">
+            <h2>Training Information</h2>
+            <p> Details coming soon! </p>
+        </div>
+    </div>
+
+    <!--Apply-->
+    <div id="apply" class="tabcontent">
+        <div class="content box style2" style="background:#A8D0E6">
+            <h2>How do I apply?</h2>
+            <p>
+                <strong>
+                    Thank you for your interest in VITA!
+                    <br />
+                </strong>
+                <i>
+                    Currently, applications are not open. Please check back in Fall 2020 for next year's application or sign up to be notified!
+                </i>
+            </p>
+            <p>
+                <!--
+                <a target="_blank" href="https://forms.gle/rQq5QGPzEMq8rUp87">
+                    <span class="button" style="margin-bottom: 5px;">Winter 2020 Volunteer Application</span>
+                </a>
+                -->
+                <a target="_blank" href="https://forms.gle/gXS9j5V9YGQepGmJ6">
+                    <span class="button" style="margin-bottom: 5px;">Volunteer Interest Form</span>
+                </a>
+                <!--
+                <a target="_blank" href="https://docs.google.com/presentation/d/15e7qhWaYidbdRIkauLlMGO3BsH4Pfu9Bbj2oj0FOQW0/">
+                    <span class="button">Information Session Slides</span>
+                </a>
+                -->
+            </p>
+        </div>
+    </div>
+
+    <!--Volunteer FAQs-->
+    <div id="volunteerfaq" class="tabcontent">
+        <div id="volunteerFaq" class="content container faq-container">
+            <h2>Volunteer FAQs</h2>
+            <section class="cd-faq v_faq">
+                <ul class="cd-faq-categories v_faq">
+                    <li>
+                        <a href="#v_applying">Applying</a>
+                    </li>
+                    <li>
+                        <a href="#v_training">Training</a>
+                    </li>
+                    <li>
+                        <a href="#v_other">Other</a>
+                    </li>
+                </ul>
+
+                <div class="cd-faq-items v_faq">
+                    <ul id="v_applying" class="cd-faq-group v_faq">
+                        <li class="cd-faq-title v_faq">
+                            <h2>Applying</h2>
+                        </li>
+                        <li>
+                            <a class="cd-faq-trigger v_faq" href="#0">How can I apply?</a>
+                            <div class="cd-faq-content">
+                                Details about the application can be found
+                                <a href="#apply">here</a>.
+                            </div>
+                        </li>
+
+                        <li>
+                            <a class="cd-faq-trigger v_faq" href="#0">How many volunteers do you accept?</a>
+                            <div class="cd-faq-content">
+                                We do not have a maximum cap for volunteers. If you are passionate about service and interested in learning more about taxes,
+                                we want you!
+                            </div>
+                        </li>
+
+                        <li>
+                            <a class="cd-faq-trigger v_faq" href="#0">Do I have to be a particular major to apply?</a>
+                            <div class="cd-faq-content">
+                                No, we accept all majors and minors, ranging from Business-Economics to Music Performance.
+                            </div>
+                        </li>
+                        <li>
+                            <a class="cd-faq-trigger v_faq" href="#0">What if I have no experience working with taxes?</a>
+                            <div class="cd-faq-content">
+                                No worries! We provide you all the necessary training during Fall or Winter quarter.
+                            </div>
+                        </li>
+                    </ul>
+
+                    <ul id="v_training" class="cd-faq-group v_faq">
+                        <li class="cd-faq-title v_faq">
+                            <h2>Training</h2>
+                        </li>
+                        <li>
+                            <a class="cd-faq-trigger v_faq" href="#0">When are the training dates?</a>
+                            <div class="cd-faq-content">
+                                We have training most Tuesday and Sunday nights from 6 - 8 PM at designated locations.
+                            </div>
+                        </li>
+                        <li>
+                            <a class="cd-faq-trigger v_faq" href="#0">Are presentation materials posted online?</a>
+                            <div class="cd-faq-content">
+                                Yes, we try our best to post all of our training materials online for review shortly before the training date. Check your emails and/or the volunteer portal for updates!
+                            </div>
+                        </li>
+                    </ul>
+
+                    <ul id="v_other" class="cd-faq-group v_faq">
+                        <li class="cd-faq-title v_faq">
+                            <h2>Other</h2>
+                        </li>
+                        <li>
+                            <a class="cd-faq-trigger v_faq" href="#0">How can I become a QR if I am a returning volunteer?</a>
+                            <div class="cd-faq-content">
+                                QR applications will be sent out to our official volunteers through email.
+                            </div>
+                        </li>
+                        <li>
+                            <a class="cd-faq-trigger v_faq" href="#0">What is the time commitment?</a>
+                            <div class="cd-faq-content">
+                                For Fall volunteers, the requirement is 12 hours for Winter and 9 hours for Spring quarter. For Winter volunteers, the requirement
+                                is 9 hours during the Winter and 9 hours during the Spring. For both Fall and Winter volunteers,
+                                you are required to complete at least 2 tax returns each quarter.
+                            </div>
+                        </li>
+                        <li>
+                            <a class="cd-faq-trigger v_faq" href="#0">Are the info session slides posted online?</a>
+                            <div class="cd-faq-content">
+                                Yes, the Fall 2019 info session slides can be accessed
+                                <a href="https://docs.google.com/presentation/d/15e7qhWaYidbdRIkauLlMGO3BsH4Pfu9Bbj2oj0FOQW0/">here</a>.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <a href="#0" class="cd-close-panel v_faq">&#10006;</a>
+            </section>
+        </div>
+    </div>
+
+
+    <!-- Volunteers-->
+    <div id="volunteers" class="tabcontent">
+        <div id="join2" class="content box style2" style="background:#24305E;color:white">
+            <h2>Why Join?</h2>
+            <p>
+                Students at UCLA may join VITA during Fall or Winter quarters. Volunteers will be equipped to file tax returns through extensive,
+                interactive training sessions. Volunteers will learn about general tax concepts and tax situations for low-income,
+                international, and elderly clients. Additionally, training sessions will include tax client simulations in
+                order to train volunteers for client interactions. For Fall volunteers, training will take place over a 7
+                week period from Weeks 3 to 9 (no training on week 8), with an additional 2 weeks of training during Winter
+                quarter in Weeks 1 and 2. For Winter volunteers, trainings are condensed into a 4 week course from Weeks
+                3 to 6. Tax sites will last from the end of January to mid-April.
+            </p>
+        </div>
+
+        <div id="training2" class="content box style2" style="color:#374785">
             <h2>Training Information</h2>
             <p>But I don't know anything about taxes!! Don't worry! More info to come soon! </p>
         </div>
 
-        <div id="apply" class="content box style2" style="background:#A8D0E6">
+        <div id="apply2" class="content box style2" style="background:#A8D0E6">
             <h2>How do I apply?</h2>
             <p>
                 <strong>
@@ -170,25 +482,25 @@
             </p>
             <p>
                 <!--
-            <a target="_blank" href="https://forms.gle/rQq5QGPzEMq8rUp87">
-                <span class="button" style="margin-bottom: 5px;">Winter 2020 Volunteer Application</span>
-            </a>
-            -->
+                <a target="_blank" href="https://forms.gle/rQq5QGPzEMq8rUp87">
+                    <span class="button" style="margin-bottom: 5px;">Winter 2020 Volunteer Application</span>
+                </a>
+                -->
                 <a target="_blank" href="https://forms.gle/gXS9j5V9YGQepGmJ6">
                     <span class="button" style="margin-bottom: 5px;">Volunteer Interest Form</span>
                 </a>
                 <!--
-            <a target="_blank" href="https://docs.google.com/presentation/d/15e7qhWaYidbdRIkauLlMGO3BsH4Pfu9Bbj2oj0FOQW0/">
-                <span class="button">Information Session Slides</span>
-            </a>
-            -->
+                <a target="_blank" href="https://docs.google.com/presentation/d/15e7qhWaYidbdRIkauLlMGO3BsH4Pfu9Bbj2oj0FOQW0/">
+                    <span class="button">Information Session Slides</span>
+                </a>
+                -->
             </p>
         </div>
 
         <p></br></p>
 
         <!--Volunteer FAQs-->
-        <div id="volunteerFaq" class="content container faq-container">
+        <div id="volunteerFaq2" class="content container faq-container">
             <p></br></p>
             <h2>Volunteer FAQs</h2>
             <section class="cd-faq v_faq">
@@ -290,7 +602,7 @@
 
     </div>
     <!-- Join -->
-    
+
     <div id="clients" class="tabcontent">
         <!-- styling nav bar for client page-->
         <style>
@@ -325,15 +637,14 @@
             }
         </style>
 
-        <!--Side-bar Nav-->
-        <div id="client-nav" class="sidenav">
-            <a href="#clientelig">Client Eligibility</a>
-            <a href="#whattobring">What to Bring</a>
-            <a href="#appointments">Appointments</a>
-            <!-- <a href="#location">Where are we located?</a>-->
-            <a href="#clientFaq">Client FAQ</a>
-        </div>
-
+        <!--Side-bar Nav
+            <div id="client-nav" class="sidenav">
+                <a href="#clientelig">Client Eligibility</a>
+                <a href="#whattobring">What to Bring</a>
+                <a href="#appointments">Appointments</a>
+                <a href="#clientFaq">Client FAQ</a>
+            </div>
+    -->
         <!--Client Eligibility -->
         <div id="clientelig" class="nav" style="background:#A8D0E6; color:white">
             <h2>Am I eligible to have my taxes done by UCLA VITA?</h2>
@@ -372,7 +683,7 @@
                 <span class="button" style="margin-bottom: 5px;">COVID-19 Announcement</span>
             </a>
             -->
-                <p><strong>*Please check back in January for tax year 2021 appointments*</strong></p>
+                <p><strong>*Please check back in January for tax year 2021 appointments*</strong> </br></p>
 
                 <!--
              <p><strong>*Please note that we will not be having anymore tax sites for this year!*</strong></p>
@@ -609,6 +920,7 @@
 
 
     <!-- Sponsors -->
+    <!--
     <div id="sponsors" class="tabcontent">
         <div class="content container">
             <h2>Our Sponsors</h2>
@@ -621,28 +933,29 @@
                 <div class="column"> <img src="images/deloitte.png" alt="Deloitte" style="width: 100px; height: 125px;"> </div>
                 <div class="column"> <img src="images/kpmg.png" alt="KPMG" style="width: 100px; height: 125px;"> </div>
             </div>
-            
+
         </div>
     </div>
+
     <style>
         /*Sponsors*/
         .column {
             float: left;
             width: 120px;
             overflow: hidden;
-        } </style>
-
-
+        } </style> -->
     <!-- Contact -->
     <div id="contact" class="tabcontent" style="background:radial-gradient(#A8D0E6,#374785,#24305E); color:white">
         <div class="content container">
             <h2>Reach Out to Us</h2>
             <p>
-                Feel free to also contact us at
-                <strong>vitaucla@gmail.com</strong>
+                </br>
+                <strong>Phone: </strong>Unfortunately, we do not have a phone number for clients to contact us. </br>
+                <strong>Email: </strong>Feel free to also contact us at <strong>vitaucla@gmail.com</strong>
             </p>
             <div class="box container">
                 <!-- Contact Form -->
+                <h2>Message us: </br></h2>
                 <form method="POST" action="https://formspree.io/vitaucla@gmail.com">
                     <input type="text" name="name" placeholder="Name" />
                     <input type="email" name="email" placeholder="Email" />
@@ -666,21 +979,6 @@
         <!-- Menu -->
         <ul class="menu">
             <li>2020 UCLA VITA</li>
-        </ul>
-        <ul class="row">
-            <li>
-                <!--Sponsors-->
-                <div class="column"> <p></p></div>
-                <div class="column"> <p></p></div>
-                <div class="column"> <img src="images/pwc.png" alt="PWC" style="width:100px;height:75px;"> </div>
-                <div class="column"> <img src="images/ey.png" alt="EY" style="width:100px;height:75px;"> </div>
-                <div class="column"> <img src="images/becker.png" alt="Becker" style="width:100px;height:125px;"> </div>
-                <div class="column"> <img src="images/squarmilner.png" alt="Squar Milner" style="width:100px;height:125px;"> </div>
-                <div class="column"> <img src="images/roger.png" alt="Roger" style="width:100px;height:125px;"> </div>
-                <div class="column"> <img src="images/deloitte.png" alt="Deloitte" style="width: 100px; height: 125px;"> </div>
-                <div class="column"> <img src="images/kpmg.png" alt="KPMG" style="width: 100px; height: 125px;"> </div>
-
-            </li>
         </ul>
     </footer>
 

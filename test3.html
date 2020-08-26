@@ -1,9 +1,6 @@
 ﻿<!DOCTYPE html>
-
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -20,12 +17,12 @@
     <link rel="shortcut icon" href="./images/favicon/favicon.ico">
     <meta name="msapplication-config" content="./images/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
-
+    
     <!-- Slick carousel http://kenwheeler.github.io -->
     <link rel="stylesheet" href="./assets/css/slick.min.css" />
 
-
-
+    
+    
     <!-- For FAQ -->
     <script src="./assets/js/modernizr.js"></script>
 
@@ -33,6 +30,7 @@
     <link rel="stylesheet" href="./mystyle.css">
 
     <title>VITA at UCLA</title>
+
 </head>
 <body>
     <!-- Header -->
@@ -48,7 +46,7 @@
                 <li>
                     <div class="dropdown ">
                         <button class="tablink dropbtn">
-                            <a href="test3.html">Home</a>
+                            <a href="#home">Home</a>
                         </button>
                 </li>
 
@@ -109,23 +107,69 @@
 
             </ul>
         </nav>
-        </header>
+    </header>
+    <!-- Home -->
+    <div id="home" class="tabcontent">
+        <div class="content container">
+            <h2 style="color:white">Volunteer Income Tax Assistance at UCLA</h2>
+        </div>
+        <div class="content box style2" style="background:inherit">
+            <p style="color:white">
+                <strong>
+                    *Please note that we will not be having anymore tax sites for this year!* <br /> <br />
+                    Currently, we are not offering any appointments. Please check back January of next year for our tax site availability. If you have any questions or concerns, please submit them through our contact form.
+                </strong>
+            </p>
+        </div>
 
-        <!-- About -->
-        <div id="aboutt" class="tabcontent">
-            <div class="content box style2">
-                <h2>About</h2>
-                <p>
-                    Welcome to VITA at UCLA!
-                    <br />
-                    <br /> Founded in 1987, VITA at UCLA provides free federal and state income tax preparation assistance to low-
-                    to moderate-income, disabled, and elderly individuals in the Los Angeles community. It is our goal to help
-                    and educate people in filing tax returns to help clarify the process and provide assistance to those who
-                    otherwise would go without aid. Each year, we train approximately 200 UCLA undergraduate students in individual
-                    income tax preparation. In 2017, our volunteers served hundreds of clients, saving them over $450,000 through
-                    tax refunds and credits.
-                </p>
+        <div id="blurb" class="content box style2">
+            <p>
+                VITA at UCLA strives to provide free tax preparation services to the Los Angeles community.
+                Each year we serve around 800 clients and have a volunteer cohort of around 200 students!
+            </p>
+        </div>
+
+        <div id="sponsors" class="content box style2">
+            <h2>Our Sponsors</h2>
+            <div class="row">
+                <div class="column"> <img src="images/pwc.png" alt="PWC" style="width:175px;height:130px;"> </div>
+                <div class="column"> <img src="images/ey.png" alt="EY" style="width:175px;height:130px;"> </div>
+                <div class="column"> <img src="images/becker.png" alt="Becker" style="width:175px;height:175px;"> </div>
+                <div class="column"> <img src="images/squarmilner.png" alt="Squar Milner" style="width:175px;height:175px;"> </div>
+                <div class="column"> <img src="images/roger.png" alt="Roger" style="width:175px;height:175px;"> </div>
+                <div class="column"> <img src="images/deloitte.png" alt="Deloitte" style="width: 175px; height: 175px;"> </div>
+                <div class="column"> <img src="images/kpmg.png" alt="KPMG" style="width: 175px; height: 175px;"> </div>
             </div>
         </div>
+
+        <style>
+            #sponsors {
+                background-color: white;
+                margin: 0;
+            }
+            /*Sponsors*/
+            .column {
+                float: left;
+                overflow: hidden;
+            }
+        </style>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <!-- Icons -->
+        <ul class="actions">
+            <li>
+                <a target="_blank" href="https://www.facebook.com/vitaucla/?fref=ts" class="icon fa-facebook">
+                    <span class="label">Facebook</span>
+                </a>
+            </li>
+        </ul>
+        <!-- Menu -->
+        <ul class="menu">
+            <li>2020 UCLA VITA</li>
+        </ul>
+    </footer>
+
 </body>
 </html>
