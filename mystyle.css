@@ -20,6 +20,23 @@ body {
     bottom: 0;
 }
 
+/*home is where the ucla pic is at*/
+#home {
+    height: 200%;
+}
+
+#intro {
+    width: 50%;
+    margin-left: 25%;
+    /*background: rgb(0,70,180,.1);
+                background: rgb(0,102,180,.1);
+                color: rgb(180,180,180);
+            */
+    background: rgb(255,255,255,.6);
+    color: rgb(0,70,180);
+    padding: 2%;
+}
+
 /*/* Styling the Navbar */
 
 nav {
