@@ -110,14 +110,15 @@
     </header>
         <!-- Contact -->
         <div id="contact" class="tabcontent" style="background:radial-gradient(#A8D0E6,#374785,#24305E); color:white">
-            <div class="content container">
+            <div id="reachUs" class="content container">
                 <h2>Reach Out to Us</h2>
                 <p>
                     </br>
                     <strong>Phone: </strong>Unfortunately, we do not have a phone number for clients to contact us. </br>
                     <strong>Email: </strong>Feel free to also contact us at <strong>vitaucla@gmail.com</strong>
                 </p>
-                <div class="box container">
+            </div>
+                <div id="message" class="box container">
                     <!-- Contact Form -->
                     <h2>Message us: </br></h2>
                     <form method="POST" action="https://formspree.io/vitaucla@gmail.com">
@@ -127,8 +128,16 @@
                         <input class="actions" type="submit" value="Send Message" />
                     </form>
                 </div>
-            </div>
+            
         </div>
      
+    <style>
+        #reachUs{
+            padding: 0% 10%;
+        }
+        #message{
+            margin: 2% 10%; /*makes the message box centered and smaller*/
+        }
+    </style>
 </body>
 </html>

@@ -32,6 +32,11 @@
     <title>VITA at UCLA</title>
 
 </head>
+<style>
+    #header {
+        overflow: visible;
+    }
+</style>
 <body>
     <!-- Header -->
     <header id="header">
@@ -108,49 +113,71 @@
             </ul>
         </nav>
     </header>
-    <!-- Home -->
-    <div id="home" class="tabcontent">
-        <div class="content container">
-            <h2 style="color:white">Volunteer Income Tax Assistance at UCLA</h2>
-        </div>
-        <div class="content box style2" style="background:inherit">
-            <p style="color:white">
-                <strong>
-                    *Please note that we will not be having anymore tax sites for this year!* <br /> <br />
-                    Currently, we are not offering any appointments. Please check back January of next year for our tax site availability. If you have any questions or concerns, please submit them through our contact form.
-                </strong>
-            </p>
-        </div>
 
-        <div id="blurb" class="content box style2">
+    <!-- Home -->
+    <style>
+        /*home is where the ucla pic is at*/
+        #home {
+            height: 200%;
+        }
+
+        #intro {
+            width: 50%;
+            margin-left: 25%;
+            /*background: rgb(0,70,180,.1);
+                background: rgb(0,102,180,.1);
+                color: rgb(180,180,180);
+            */
+            background: rgb(255,255,255,.6);
+            color: rgb(0,70,180);
+            padding: 2%;
+        }
+
+    </style>
+    <div id="home" class="tabcontent">
+        <div id="intro" class="content container">
+            <h2>Volunteer Income Tax Assistance at UCLA</h2>
+            <h3>
+                <strong>
+                    Welcome! </br>
+                    *Please note that we are currently not offering any appointments.
+                    Please check back January of next year for our tax site availability.
+                    If you have any questions or concerns, please submit them through our contact form.*
+                    <br /> <br />
+                </strong>
+
+            </h3>
             <p>
                 VITA at UCLA strives to provide free tax preparation services to the Los Angeles community.
                 Each year we serve around 800 clients and have a volunteer cohort of around 200 students!
             </p>
         </div>
 
-        <div id="sponsors" class="content box style2">
-            <h2>Our Sponsors</h2>
-            <div class="row">
-                <div class="column"> <img src="images/pwc.png" alt="PWC" style="width:175px;height:130px;"> </div>
-                <div class="column"> <img src="images/ey.png" alt="EY" style="width:175px;height:130px;"> </div>
-                <div class="column"> <img src="images/becker.png" alt="Becker" style="width:175px;height:175px;"> </div>
-                <div class="column"> <img src="images/squarmilner.png" alt="Squar Milner" style="width:175px;height:175px;"> </div>
-                <div class="column"> <img src="images/roger.png" alt="Roger" style="width:175px;height:175px;"> </div>
-                <div class="column"> <img src="images/deloitte.png" alt="Deloitte" style="width: 175px; height: 175px;"> </div>
-                <div class="column"> <img src="images/kpmg.png" alt="KPMG" style="width: 175px; height: 175px;"> </div>
+            <div id="sponsors" class="content box style2">
+                <h2> Our Sponsors</h2>
+                <div class="row">
+                    <div class="column"> <img src="images/pwc.png" alt="PWC" style="width:175px;height:130px;"> </div>
+                    <div class="column"> <img src="images/ey.png" alt="EY" style="width:175px;height:130px;"> </div>
+                    <div class="column"> <img src="images/becker.png" alt="Becker" style="width:175px;height:175px;"> </div>
+                    <div class="column"> <img src="images/squarmilner.png" alt="Squar Milner" style="width:175px;height:175px;"> </div>
+                    <div class="column"> <img src="images/roger.png" alt="Roger" style="width:175px;height:175px;"> </div>
+                    <div class="column"> <img src="images/deloitte.png" alt="Deloitte" style="width: 175px; height: 175px;"> </div>
+                    <div class="column"> <img src="images/kpmg.png" alt="KPMG" style="width: 175px; height: 175px;"> </div>
+                </div>
             </div>
-        </div>
-
+        
         <style>
             #sponsors {
-                background-color: white;
-                margin: 0;
+                margin: 5%;
+                background: rgb(255,255,255,.6);
+                color: darkblue;
+                height: 500px;
             }
             /*Sponsors*/
             .column {
                 float: left;
                 overflow: hidden;
+                width: 25%;
             }
         </style>
     </div>

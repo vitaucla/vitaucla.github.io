@@ -108,6 +108,16 @@
             </ul>
         </nav>
     </header>
+    <style>
+        #yes {
+            margin-bottom:0px; 
+            padding-bottom: 0.5em;
+        }
+
+        #whattobring {
+            padding: 0.5em;
+        }
+    </style>
 
     <!--Appointments-->
     <div id="appointments" class="nav" style="background:#24305E; color:white">
@@ -134,8 +144,7 @@
                 <span class="button" style="margin-bottom: 5px;">COVID-19 Announcement</span>
             </a>
             -->
-            <p><strong>*Please check back in January for tax year 2021 appointments*</strong> </br></p>
-
+            <p id="yes"><strong>*Please check back in January for tax year 2021 appointments*</strong></p>
             <!--
              <p><strong>*Please note that we will not be having anymore tax sites for this year!*</strong></p>
             -->
@@ -143,12 +152,12 @@
     </div>
 
     <!--Things Clients need to bring-->
-    <div id="whattobring" class="nav" style=" background: radial-gradient(blue, #374785);color: white">
+    <div id="whattobring" class="nav" style="background:radial-gradient(#24305E, #374785);color: white">
         <h2>What should you bring to site?</h2>
 
         <!--Required-->
-        <div id="required" class="content box style2" style=" background: radial-gradient(blue, #374785);color: white">
-            <strong>Required for all:</strong>
+        <div id="required" class="content box style2" style=" background: radial-gradient(#006699, #374785);color: white">
+            <h2>Required for all:</h2>
             <br />(1) Photo ID: Driver’s license, passport, student ID, etc.
             <br />(2a) Social Security cards for you, your spouse and any dependents you are claiming on your
             return. Photo copies or electronic images of social security cards are acceptable.
@@ -159,8 +168,8 @@
             <br />
         </div>
         <!--Applicable to Situation-->
-        <div id="applicable" class="content box style2" style=" background: radial-gradient(blue, #374785);color: white">
-            <strong>If applicable to your situation:</strong>
+        <div id="applicable" class="content box style2" style=" background: radial-gradient(#006699, #374785);color: white">
+            <h2>If applicable to your situation:</h2>
             <br />(4) Wage and earning statements (Form W-2, W-2G, 1099-R, 1099-Misc) from all employers.
             <br />(5) Interest and dividend statements from banks or brokerages (Forms 1099).
             <br />(6a) All Forms 1095, Health Insurance Statements.
@@ -171,9 +180,36 @@
             <br />
         </div>
 
+
+        <style>
+            div a {
+                color: #f76c6c;
+            }
+
+            #required {
+                padding: 2em 2.5em;
+                margin: 5%;
+            }
+
+            #applicable {
+                padding: 2em 2.5em;
+                margin: 5%;
+            }
+
+            #Recommended {
+                padding: 2em 2.5em;
+                margin: 5%;
+            }
+
+            #certsits {
+                padding: 2em 2.5em;
+                margin: 5%;
+            }
+        </style>
+
         <!--Recommended-->
-        <div id="Recommended" class="content box style2" style=" background: radial-gradient(blue, #374785);color: white">
-            <strong>Recommended:</strong>
+        <div id="Recommended" class="content box style2" style=" background: radial-gradient(#006699, #374785);color: white">
+            <h2>Recommended:</h2>
             <br />(9) Copies of income transcripts from IRS and state.
             <br />(10) A copy of last year’s federal and state returns.
             <br />(11a) For everyone: a filled out
@@ -184,8 +220,8 @@
         </div>
 
         <!--For Certain Situations-->
-        <div id="certsits" class="content box style2" style=" background: radial-gradient(blue, #374785);color: white">
-            <strong>Notes for certain situations:</strong>
+        <div id="certsits" class="content box style2" style=" background: radial-gradient(#006699, #374785);color: white">
+            <h2> Notes for certain situations:</h2>
             <br />(1) To file taxes electronically on a married-filing-jointly (MFJ) tax return,
             <em>both spouses</em> must be present to sign the required forms.
             <br />(2a) If you are a foreign non-resident, we are unable to file tax returns unless you have
@@ -195,5 +231,6 @@
             to file for you.
         </div>
     </div>
+
 </body>
 </html>

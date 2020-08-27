@@ -6,16 +6,18 @@ html {
 }
 
 body {
-    margin: 0px;
+    margin: 0 auto;
     background: white;
     position: relative;
     min-height: 100%;
     box-sizing: border-box;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 /*Styling footer */
-footer {
+#footer {
     width: 100%;
+    bottom: 0;
 }
 
 /*/* Styling the Navbar */
