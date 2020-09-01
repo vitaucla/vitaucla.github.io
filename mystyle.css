@@ -22,23 +22,22 @@ body {
 
 /*home is where the ucla pic is at*/
 #home {
-    height: 200%;
+    height: 100%;
+    width: 100%;
 }
 
 #intro {
-    width: 50%;
-    margin-left: 25%;
     /*background: rgb(0,70,180,.1);
                 background: rgb(0,102,180,.1);
                 color: rgb(180,180,180);
             */
     background: rgb(255,255,255,.6);
-    color: rgb(0,70,180);
+    /*color: rgb(0,70,180); */
+    color: #374785;
     padding: 2%;
 }
 
 /*/* Styling the Navbar */
-
 nav {
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
@@ -102,7 +101,9 @@ nav {
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
-  .topnav a:not(:first-child),
+    .topnav a:not(:first-child) {
+        display: none;
+    }
   .dropdown .dropbtn {
     display: none;
   }

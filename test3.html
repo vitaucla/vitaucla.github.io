@@ -17,18 +17,18 @@
     <link rel="shortcut icon" href="./images/favicon/favicon.ico">
     <meta name="msapplication-config" content="./images/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
-    
+
     <!-- Slick carousel http://kenwheeler.github.io -->
     <link rel="stylesheet" href="./assets/css/slick.min.css" />
 
-    
-    
+
+
     <!-- For FAQ -->
     <script src="./assets/js/modernizr.js"></script>
 
     <!-- For Overhaul -->
     <link rel="stylesheet" href="./mystyle.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>VITA at UCLA</title>
 
 </head>
@@ -49,6 +49,7 @@
                         <button class="tablink dropbtn">
                             <a href="#home">Home</a>
                         </button>
+                    </div>
                 </li>
 
                 <!-- About Us Button -->
@@ -57,6 +58,7 @@
                         <button class="tablink dropbtn">
                             <a href="about.html">About Us</a>
                         </button>
+                    </div>
                 </li>
 
                 <!-- Contact Us Button -->
@@ -65,6 +67,7 @@
                         <button class="tablink dropbtn">
                             <a href="contact.html">Contact Us </a>
                         </button>
+                    </div>
                 </li>
 
                 <!-- Drop down buttons for the Client Section -->
@@ -104,60 +107,114 @@
                         <button class="tablink dropbtn">
                             <a href="volunteers.html">Volunteer Portal</a>
                         </button>
+                    </div>
+                </li>
+                <!--excess flow button-->
+                <!--<li class="mobile-nav">
+
+    <div class="dropdown">
+        <button class="tablink dropbtn">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </button>
+    </div> -->
                 </li>
 
             </ul>
+
         </nav>
     </header>
 
     <!-- Home -->
-    <div id="home" class="tabcontent">
-        <div id="intro" class="content container">
-            <h2>Volunteer Income Tax Assistance at UCLA</h2>
-            <h3>
+    <section id="home" class="main style1 dark fullscreen">
+        <div class="content container">
+            <h2>Volunteer Income Tax Assistance</h2>
+            <h1>
+                at UCLA</h2>
+                <a href="#intro" class="button style2 down"></a>
+        </div>
+    </section>
+
+    <section id="intro" class="main style2 right dark fullscreen">
+        <div id="blurb" class="content container">
+            <h2>Welcome to Volunteer Income Tax Assistance at UCLA!!</h2>
+
+            <p>
+                </br>
+                VITA at UCLA strives to provide free tax preparation services to the Los Angeles community.
+                Each year we serve around 800 clients and have a volunteer cohort of around 200 students!
+            </p>
+        </div>
+    </section>
+    <section id="updates" class="main">
+        <div id="update" class="content container">
+            <h2> Updates: </h2>
+            <p>
                 <strong>
-                    Welcome! </br>
                     *Please note that we are currently not offering any appointments.
                     Please check back January of next year for our tax site availability.
                     If you have any questions or concerns, please submit them through our contact form.*
                     <br /> <br />
                 </strong>
-
-            </h3>
-            <p>
-                VITA at UCLA strives to provide free tax preparation services to the Los Angeles community.
-                Each year we serve around 800 clients and have a volunteer cohort of around 200 students!
             </p>
-        </div>
-
-            <div id="sponsors" class="content box style2">
-                <h2> Our Sponsors</h2>
-                <div class="row">
-                    <div class="column"> <img src="images/pwc.png" alt="PWC" style="width:175px;height:130px;"> </div>
-                    <div class="column"> <img src="images/ey.png" alt="EY" style="width:175px;height:130px;"> </div>
-                    <div class="column"> <img src="images/becker.png" alt="Becker" style="width:175px;height:175px;"> </div>
-                    <div class="column"> <img src="images/squarmilner.png" alt="Squar Milner" style="width:175px;height:175px;"> </div>
-                    <div class="column"> <img src="images/roger.png" alt="Roger" style="width:175px;height:175px;"> </div>
-                    <div class="column"> <img src="images/deloitte.png" alt="Deloitte" style="width: 175px; height: 175px;"> </div>
-                    <div class="column"> <img src="images/kpmg.png" alt="KPMG" style="width: 175px; height: 175px;"> </div>
-                </div>
-            </div>
-        
-        <style>
-            #sponsors {
-                margin: 5%;
-                background: rgb(255,255,255,.6);
-                color: darkblue;
-                height: 500px;
-            }
-            /*Sponsors*/
-            .column {
-                float: left;
-                overflow: hidden;
-                width: 25%;
-            }
-        </style>
+    </section>
     </div>
+
+    <!-- Sponsors -->
+    <section id="sponsors">
+        <div id="sponsorships" class="content container" style="background: white; padding: 2%;">
+            <h2 style="color:#374785; text-align: center;">Our Sponsors</h2>
+            <p></p>
+            <div class="row">
+                <div class="column"> <img src="images/pwc.png" alt="PWC" style="width:10em;height:7.5em;"> </div>
+                <div class="column"> <img src="images/ey.png" alt="EY" style="width:10em;height:7.5em;"> </div>
+                <div class="column"> <img src="images/becker.png" alt="Becker" style="width:10em;height:7.5em;"> </div>
+                <div class="column"> <img src="images/squarmilner.png" alt="Squar Milner" style="width:10em;height:7.5em;"> </div>
+                <div class="column"> <img src="images/roger.png" alt="Roger" style="width:10em;height:7.5em;"> </div>
+                <div class="column"> <img src="images/deloitte.png" alt="Deloitte" style="width:10em;height:7.5em;"> </div>
+                <div class="column"> <img src="images/kpmg.png" alt="KPMG" style="width:10em;height:7.5em;"> </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Sponsors styling-->
+    <style>
+        /*Sponsors*/
+        .column {
+            float: left;
+            overflow: hidden;
+            margin: 2%;
+        }
+
+        /* Clearfix (clear floats) */
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+
+    <!-- Styling Homepage-->
+    <style>
+        body {
+            background: #A8D0E6;
+        }
+
+        #intro, #updates, #sponsorships {
+            /*background: rgb(255,255,255,.6); */
+            background: #374785;
+            margin: 5% 5%;
+        }
+
+        #blurb, #update {
+            width: 100%;
+            margin: left;
+            color: white;
+            padding: 2%;
+            margin: 2%;
+        }
+    </style>
 
     <!-- Footer -->
     <footer id="footer">
@@ -175,5 +232,16 @@
         </ul>
     </footer>
 
+    <!--Header hamburger thingy?-->
+    <script>
+        function myFunction() {
+            var x = document.getElementById("topnav");
+            if (x.className === "nav") {
+                x.className += "responsive";
+            } else {
+                x.className = "nav";
+            }
+        }
+    </script>
 </body>
 </html>
