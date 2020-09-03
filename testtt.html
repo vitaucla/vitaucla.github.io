@@ -1,0 +1,323 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--<link rel="stylesheet" href="./assets/css/main.min.css" />-->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./images/favicon/manifest.json">
+    <link rel="mask-icon" href="./images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="./images/favicon/favicon.ico">
+    <meta name="msapplication-config" content="./images/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Slick carousel http://kenwheeler.github.io -->
+    <link rel="stylesheet" href="./assets/css/slick.min.css" />
+
+    <!-- For FAQ -->
+    <script src="./assets/js/modernizr.js"></script>
+
+    <style>
+        /*Overall styling*/
+        html {
+            margin: 0;
+            height: 100%;
+            width: 100%;
+        }
+
+        body {
+            margin: 0 auto;
+            background: white;
+            position: relative;
+            min-height: 100%;
+            box-sizing: border-box;
+            font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        }
+
+        /*Styling footer */
+        #footer {
+            width: 100%;
+            bottom: 0;
+        }
+        /*styling header*/
+        .topnav {
+            overflow: hidden;
+            background-color: #A8D0E6;
+        }
+
+            .topnav a {
+                float: left;
+                display: block;
+                color: black;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+
+        .active {
+            background-color: #A8D0E6;
+            color: white;
+        }
+
+        .topnav .icon {
+            display: none;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+            .dropdown .dropbtn {
+                font-size: 17px;
+                border: none;
+                outline: none;
+                color: black;
+                padding: 14px 16px;
+                background-color: inherit;
+                font-family: inherit;
+                margin: 0;
+            }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+            .dropdown-content a {
+                float: none;
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+            }
+
+        .topnav a:hover, .dropdown:hover .dropbtn {
+            background-color: #555;
+            color: white;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        @media screen and (max-width: 600px) {
+            .topnav a:not(:first-child), .dropdown .dropbtn {
+                display: none;
+            }
+
+            .topnav a.icon {
+                float: right;
+                display: block;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .topnav.responsive {
+                position: relative;
+            }
+
+                .topnav.responsive .icon {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                }
+
+                .topnav.responsive a {
+                    float: none;
+                    display: block;
+                    text-align: left;
+                }
+
+                .topnav.responsive .dropdown {
+                    float: none;
+                }
+
+                .topnav.responsive .dropdown-content {
+                    position: relative;
+                }
+
+                .topnav.responsive .dropdown .dropbtn {
+                    display: block;
+                    width: 100%;
+                    text-align: left;
+                }
+        }
+    </style>
+</head>
+<body>
+    <!--Header-->
+    <div class="topnav" id="myTopnav">
+        <!--Logo-->
+        <a href="#home"> <img id="logo" style="height: 4em" src="./images/logo.png" /> </a>
+        <!--Home Button-->
+        <a href="#home" class="active">Home</a>
+        <!-- About Us Button -->
+        <a href="about.html">About Us</a>
+        <!-- Contact Us Button -->
+        <a href="contact.html">Contact Us</a>
+
+        <!-- Drop down buttons for the Client Section -->
+        <div class="dropdown">
+            <button class="dropbtn">
+                Clients
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="topnav dropdown-content">
+                <a href="eligibility.html">Client Eligibility</a>
+                <a href="appointments.html">Appointments</a>
+                <a href="clientfaqs.html">Client FAQ</a>
+            </div>
+        </div>
+        <!-- Drop down bar for Volunteer Section -->
+        <div class="dropdown">
+            <button class="dropbtn">
+                Volunteers
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="volunteer.html">Why Join & Training Information</a>
+                <a href="apply.html">Apply</a>
+                <a href="volunteerfaqs.html">Volunteer FAQ</a>
+            </div>
+        </div>
+        <a href="#volunteers.html"> Volunteer Portal</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+
+    <!-- Home -->
+    <section id="home" class="main style1 dark fullscreen">
+        <div class="content container">
+            <h2>Volunteer Income Tax Assistance</h2>
+            <h1>
+                at UCLA</h2>
+                <a href="#intro" class="button style2 down"></a>
+        </div>
+    </section>
+
+    <section id="intro" class="main style2 right dark fullscreen">
+        <div id="blurb" class="content container">
+            <h2>Welcome to Volunteer Income Tax Assistance at UCLA!!</h2>
+
+            <p>
+                </br>
+                VITA at UCLA strives to provide free tax preparation services to the Los Angeles community.
+                Each year we serve around 800 clients and have a volunteer cohort of around 200 students!
+            </p>
+        </div>
+    </section>
+    <section id="updates" class="main">
+        <div id="update" class="content container">
+            <h2> Updates: </h2>
+            <p>
+                <strong>
+                    *Please note that we are currently not offering any appointments.
+                    Please check back January of next year for our tax site availability.
+                    If you have any questions or concerns, please submit them through our contact form.*
+                    <br /> <br />
+                </strong>
+            </p>
+    </section>
+    </div>
+
+    <!-- Sponsors -->
+    <section id="sponsors">
+        <div id="sponsorships" class="content container" style="background: white; padding: 2%;">
+            <h2 style="color:#374785; text-align: center;">Our Sponsors</h2>
+            <p></p>
+            <div class="row">
+                <div class="column"> <img src="images/pwc.png" alt="PWC" style="width:10em;height:7.5em;"> </div>
+                <div class="column"> <img src="images/ey.png" alt="EY" style="width:10em;height:7.5em;"> </div>
+                <div class="column"> <img src="images/becker.png" alt="Becker" style="width:10em;height:7.5em;"> </div>
+                <div class="column"> <img src="images/squarmilner.png" alt="Squar Milner" style="width:10em;height:7.5em;"> </div>
+                <div class="column"> <img src="images/roger.png" alt="Roger" style="width:10em;height:7.5em;"> </div>
+                <div class="column"> <img src="images/deloitte.png" alt="Deloitte" style="width:10em;height:7.5em;"> </div>
+                <div class="column"> <img src="images/kpmg.png" alt="KPMG" style="width:10em;height:7.5em;"> </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Sponsors styling-->
+    <style>
+        /*Sponsors*/
+        .column {
+            float: left;
+            overflow: hidden;
+            margin: 2%;
+        }
+
+        /* Clearfix (clear floats) */
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+
+    <!-- Styling Homepage-->
+    <style>
+        body {
+            background: #A8D0E6;
+        }
+
+        #intro, #updates, #sponsorships {
+            /*background: rgb(255,255,255,.6); */
+            background: #374785;
+            margin: 5% 5%;
+        }
+
+        #blurb, #update {
+            width: 95%;
+            margin: left;
+            color: white;
+            padding: 2%;
+        }
+    </style>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <!-- Icons -->
+        <ul class="actions">
+            <li>
+                <a target="_blank" href="https://www.facebook.com/vitaucla/?fref=ts" class="icon fa-facebook">
+                    <span class="label">Facebook</span>
+                </a>
+            </li>
+        </ul>
+        <!-- Menu -->
+        <ul class="menu">
+            <li>2020 UCLA VITA</li>
+        </ul>
+    </footer>
+</body>
+</html>
